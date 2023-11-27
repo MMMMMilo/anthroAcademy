@@ -1,0 +1,38 @@
+body{
+    background-color: #212A2B;
+    color: #fff;
+    font-family: "Noto Sans TC", sans-serif,"Roboto";
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+header{
+    /* width: 100%; */
+    position: sticky;
+    top: 0;
+    background-color: #212A2B;
+    z-index: 2;
+}
+header .wrap{
+    /* max-width: 1200px; */
+    width: 90%;
+    height: 70px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+header .wrap .nav-logo img{
+    width: 100%;
+    vertical-align: middle;
+}
+header .wrap .nav-bar ul{
+    display: flex;
+}
+header .wrap .nav-bar a{
+    text-decoration: none;
+    font-size: clamp(1rem, 1.667vw, 1.5rem);
+    color:#fff ;
+    padding: 10px;
+}
+
+
