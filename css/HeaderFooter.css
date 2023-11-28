@@ -41,23 +41,22 @@ header .wrap .nav-bar a{
     padding: 10px;
 }
 
-.footer{}
-.footer .wrap{
+footer .wrap{
     max-width:90%;
     margin: 1rem auto;
     text-align: end;
     line-height: 1.5rem;
 }
-.footer .footer-link{
+footer .footer-link{
     display: flex;
     gap: 1.5rem;
     justify-content: end;
 }
-.footer .footer-link a{
+footer .footer-link a{
     text-decoration: none;
     color: #fff;
     font-size: var(--p--font-size);
 }
-.footer .copyright{
+footer .copyright{
     font-size: var(--p--font-size);
 }
