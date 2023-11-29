@@ -29,7 +29,6 @@ main{
     background-image: url(../img/news-backgurond-textures.png);
     color: #212A2B;
 }
-
 .item{
     width: 90%;
     display: grid;
