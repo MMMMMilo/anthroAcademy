@@ -1,0 +1,78 @@
+main{
+    margin: auto;
+    display:flex ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.left-col, .right-col{
+    display: flex;
+    flex-direction: column;
+    padding:0 2.5rem;
+    align-items: center;
+}
+.left-col h1{
+    font-size: var(--h1-font-size);
+    font-weight: 600;
+}
+.left-col .select{
+    padding: 2.5rem 0 1rem 0;
+    display: flex;
+    gap: 8rem;
+}
+@media screen and (width<=768px){
+    .left-col .select{
+        gap:4rem;
+    }
+}
+.left-col .select span{
+    font-size: var(--h3-font-size);
+}
+.left-col .other-signup{
+    padding: 1.5rem 2.5rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.left-col .other-signup button{
+    font-size: var(--p--font-size);
+    font-weight: 600;
+    border-style: none;
+    border-radius: 1rem;
+    background-color: #FFF;
+    color: #212A2B;
+    width: 150px;
+    height: 40px;
+    margin: 1rem 0;
+    /* padding: 1rem 1.5rem; */
+}
+
+.right-col form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+.right-col form h3{
+    text-align: center;
+}
+.right-col form input{
+    color: #FFF;
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    font-size: var(--p--font-size);
+    padding: 1rem;
+}
+::placeholder{
+    color: #FFF;
+    font-size: var(--p--font-size);
+}
+.right-col a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: var(--p--font-size);
+    text-align: end;
+}

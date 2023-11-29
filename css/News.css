@@ -7,9 +7,9 @@
     aspect-ratio: 1920/400;
 }
 .banner .banner-pic img{
+    display: block;
     width: 100%;
     height: 100%;
-    vertical-align: middle;
 }
 .banner .banner-text{
     position: absolute;
@@ -19,6 +19,7 @@
 .banner .banner-text h1{
     font-size: var(--h1-font-size);
     padding-bottom: 0.5rem;
+    font-weight: 600;
 }
 .banner .banner-text h2{
     font-size: var(--h2-font-size);

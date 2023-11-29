@@ -12,9 +12,10 @@ main .cover .personal-photo{
     aspect-ratio: 550/550;
 }
 main .cover .personal-photo img{
+    display: block;
     width: 100%;
     height: 100%;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     /* 沒至底??? */
     border-radius: 1rem;
 }
@@ -129,7 +130,6 @@ span{
         width: 100%;
         text-align: justify;
         padding: 2rem 0;
-    
     }
 
 }

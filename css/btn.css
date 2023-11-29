@@ -1,6 +1,29 @@
+.submit-primary{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    background-color: #02DEC5;
+    color: #212A2B;
+    line-height: 2;
+    outline: none;
+    border-style: none;
+    font-size: var(--h3-font-size);
+    font-weight: 600;
+}
 
 
 
+.submit-secondary{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: #fff;
+    line-height: 2;
+    outline: none;
+    border-style: none;
+    border: 1px solid #fff;
+}
 
 
 .more-detail{

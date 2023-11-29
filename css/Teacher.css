@@ -7,9 +7,9 @@
     aspect-ratio: 1920/400;
 }
 .banner .banner-pic img{
+    display: block;
     width: 100%;
     height: 100%;
-    vertical-align: middle;
 }
 @media screen and (width<1024px){
     .banner .banner-text-md{

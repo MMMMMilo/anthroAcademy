@@ -1,0 +1,62 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300,700&display=swap');
+
+$sans-serif: 'Inter', sans-serif;
+
+html {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	font-size: 62.5%; 
+
+	* {
+		box-sizing: inherit;
+	}
+} */
+
+/* body {
+	align-items: center;
+	background: linear-gradient(90deg, #2f2023, #2f2023 46.8rem, #eeeae0 46.8rem, #eeeae0);
+	display: flex;
+	font-family: $sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	justify-content: center;
+	min-height: 100vh;
+	position: relative;
+	
+	@media (max-width: 1023px) {
+		background: linear-gradient(180deg, #2f2023, #2f2023 22.6rem, #eeeae0 22.6rem, #eeeae0);
+	}
+} */
+
+h2 {
+	font-size: 1.6rem;
+}
+
+details {	
+	&[open] summary::after {
+		transform: rotate(45deg);
+	}
+	
+	&:last-of-type {
+		border-bottom: 0.1rem solid #d4bb8f;
+	}
+	
+	summary {
+		border-top: 0.1rem solid #d4bb8f;
+		cursor: pointer;
+		display: flex;
+		font-size: 2rem;
+		font-weight: 300;
+		list-style: none;
+		margin-bottom: 1.6rem;
+		padding-top: 1.6rem;
+		
+		&::after {			
+			font-family: 'Material Symbols Outlined';
+			content: "add_circle";
+			margin-left: auto;
+			transform-origin: center;
+		}
+	}
+}
