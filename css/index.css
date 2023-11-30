@@ -192,9 +192,14 @@ h2{
     justify-self: end;
     font-size: var(--p--font-size);
 }
-.path-primary, .path-secondery{
+.path-primary {
     position: absolute;
     bottom: -50px;
+    right: 35px;
+}
+.path-secondery{
+    position: absolute;
+    bottom: -80px;
     right: 35px;
 }
 /* ============================================news */
@@ -246,7 +251,7 @@ h2{
     display: flex;
     gap: 2.5rem;
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 @media screen and (width<768px) {
     .feature .wrap{

@@ -7,6 +7,7 @@
 .selection h1{
     font-size: var(--h1-font-size);
     font-weight: 600;
+    line-height: 1.5;
 }
 .selection .location{
     display: flex;
@@ -16,6 +17,14 @@
 }
 .selection .location span{
     font-size: var(--p--font-size);
+}
+.selection .map{
+    width: 30%;
+    aspect-ratio: 3/4;
+}
+.selection .map img{
+    display: block;
+    width: 100%;
 }
 .selection .lightbox{
     font-size: var(--h2-font-size);
@@ -27,29 +36,15 @@
 .selection .lightbox span{
     font-size: var(--p--font-size);
 }
-@media screen and (width<=1024px){
+@media screen and (width<=768px){
     .selection .wrap{
-        width: 60%;
-        /* margin: auto; */
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        /* gap: 1rem; */
         align-items: center;
     }
-    .selection .location{
-        align-self: flex-start;
-    }
-    .selection .map {
-        align-self: center;
-    }
-    .selection .map img{
-        display: block;
-    }
-    .selection .lightbox{
-        align-self: flex-end;
-    }
 }
-@media screen and (width>1024px){
+@media screen and (width>768px){
     .selection .wrap{
         margin: 2.5rem auto;
         max-width: 90%;
@@ -61,14 +56,10 @@
         margin-top: 5%;
         width: 30%;
     }
-    .selection .map img{
-        display: block;
-    }
     .selection .lightbox{
         margin-top: 15%;
     }
 }
-
 .selection a{
     text-decoration: none;
     color: #212A2B;
@@ -85,14 +76,10 @@
 }
 .course .wrap{
     max-width:90%;
-    margin:0 auto 5rem auto;
+    margin:3rem auto;
 
 }
 .course .course-list{
-    padding: 2.5rem;
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem; */
     margin:5rem auto 5rem auto;
     display: grid;
     gap: 2rem;

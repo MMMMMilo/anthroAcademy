@@ -13,8 +13,8 @@
 }
 .banner .banner-text{
     position: absolute;
-    right: clamp(10rem, 20vw, 20rem);
-    top: clamp(2rem, 5vw, 6rem);
+    right: 10%;
+    top: 40%;
 }
 .banner .banner-text h1{
     font-size: var(--h1-font-size);
@@ -26,10 +26,10 @@
 }
 @media screen and (width<=768px){
     .banner .banner-text h1{
-        font-size: var(--h2-font-size);
+        font-size: var(--h3-font-size);
     }
     .banner .banner-text h2{
-        display: none;
+        font-size: var(--p--font-size);
     }
 }
 
@@ -56,6 +56,7 @@ main{
     text-decoration: none;
     line-height: 1.5;
     color: #000;
+    position: relative;
 }
 .news-list .news-link h3{
     font-size: var(--h3-font-size);
@@ -64,5 +65,11 @@ main{
 .news-list .news-link span{
     font-size: var(--p--font-size);
     color: #212A2B;
+}
+
+.fa-arrow-right{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
 }
 

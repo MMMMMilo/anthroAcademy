@@ -16,7 +16,7 @@ header{
     position: sticky;
     top: 0;
     background-color: #212A2B;
-    z-index: 2;
+    z-index: 99;
 }
 header .wrap{
     /* max-width: 1200px; */
