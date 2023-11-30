@@ -1,5 +1,6 @@
 main{
     width: 100%;
+    position: relative;
 }
 main .cover{
     max-width: 90%;
@@ -37,7 +38,7 @@ main .cover .personal-intro{
     main .cover .personal-intro{
         position: absolute;
         /* top: 0; */
-        bottom: 0;
+        bottom: .5rem;
         /* right: 0; */
         left: 0;
         display: flex;
@@ -108,6 +109,10 @@ span{
 .personal-content .item .txt{
     width: 60%;
     padding-left: 6rem;
+    
+}
+.personal-content .item:nth-child(1), .personal-content .item:nth-child(2) .txt{
+    text-align: justify;
 }
 .personal-content .item .txt p{
     font-size: var(--p--font-size);
@@ -128,11 +133,18 @@ span{
     }
     .personal-content .item .txt{
         width: 100%;
-        text-align: justify;
         padding: 2rem 0;
     }
-
+    .personal-content .item:nth-child(3), .personal-content .item:nth-child(4) .txt{
+        text-align: center;
+    }
 }
 p+P{
     padding-top: 1rem;
+}
+.path-primary{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    /* 小尺寸至中??? */
 }

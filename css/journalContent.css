@@ -93,14 +93,16 @@ article .first-paragraph,.second-paragraph p{
         padding: 1.5rem 0;
     }
     /* left==================== */
-    article .first-paragraph .pic{
+    article .first-paragraph .pic-left{
         width: 100%;
         aspect-ratio: 387/570;
     }
-    article .first-paragraph .pic img{
+    article .first-paragraph .pic-left img{
         display: block;
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
+        /* object-fit: cover; */
+        
     }
     /* right=================== */
     article .second-paragraph .pic-rightL{

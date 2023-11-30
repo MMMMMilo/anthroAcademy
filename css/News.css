@@ -24,6 +24,15 @@
 .banner .banner-text h2{
     font-size: var(--h2-font-size);
 }
+@media screen and (width<=768px){
+    .banner .banner-text h1{
+        font-size: var(--h2-font-size);
+    }
+    .banner .banner-text h2{
+        display: none;
+    }
+}
+
 main{
     width: 100%;
     background-color: #DDDDDD;

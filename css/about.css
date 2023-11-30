@@ -24,6 +24,14 @@
 .banner .banner-text h2{
     font-size: var(--h2-font-size);
 }
+@media screen and (width<=768px){
+    .banner .banner-text h1{
+        font-size: var(--h2-font-size);
+    }
+    .banner .banner-text h2{
+        display: none;
+    }
+}
 
 main{
     width: 100%;
@@ -86,6 +94,11 @@ main .contact{
     background-image: radial-gradient( rgba(254,254,254,0) 20%, rgba(255,255,255,0.7) 200%); 
     padding: 4rem;
 }
+@media screen and (width<=768px){
+    main .contact{
+        padding: 4rem 1rem;
+    }
+}
 .contact form .row{
     display: flex;
     gap: 2.5rem;
@@ -94,6 +107,15 @@ main .contact{
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    margin: 1.5rem 0;
+}
+.contact form .row-bottom textarea{
+    background-color: transparent;
+    outline:none;
+    border-radius: 1rem;
+    border: 1px solid #fff;
+    color: #FFF;
+    padding-top: 2.5rem;
 }
 
 .contact form input{

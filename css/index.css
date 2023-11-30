@@ -90,18 +90,6 @@ h2{
     font-size: var(--p--font-size);
     line-height: 1.5;
 }
-.teacher .teacher-intro .btn-primary{
-    text-decoration: none;
-    font-size: clamp(1.5rem,2.441vw,1.675rem);
-    font-weight: 600;
-    color: #212A2B;
-    background-color: #02DEC5;
-    border-radius: 1.5rem;
-    text-align: center;
-    padding: .5rem;
-}
-
-
 .teacher .teacher-card{
     display: grid;
     grid-template-rows: repeat(3/fr);
@@ -147,6 +135,7 @@ h2{
 .course .wrap{
     max-width:90%;
     margin:0 auto 10rem auto;
+    position: relative;
 }
 .course .course-list{
     padding: 2.5rem;
@@ -162,8 +151,14 @@ h2{
     grid-template-columns:2/1fr ;
     gap: 1rem;
     padding: 1rem 2rem;
-    border:3px solid #02DEC5;
+    border:2px solid #02DEC5;
     border-radius: 0.625rem;
+    position: relative;
+}
+.course .course-list .course-card a{
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 .course .course-list .course-card .header{
     grid-row: 1/2;
@@ -184,7 +179,7 @@ h2{
     font-size: var(--h3-font-size);
     line-height: 1.5;
     padding-bottom: 1rem;
-    border-bottom: 3px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 .course .course-list .course-card .company{
     grid-row: 3/4;
@@ -197,7 +192,11 @@ h2{
     justify-self: end;
     font-size: var(--p--font-size);
 }
-
+.path-primary, .path-secondery{
+    position: absolute;
+    bottom: -50px;
+    right: 35px;
+}
 /* ============================================news */
 .news, .feature{
     width: 100%;
@@ -209,6 +208,7 @@ h2{
     max-width:90%;
     margin:auto;
     color: #343434;
+    position: relative;
 }
 .news .news-list .news-link{
     color: #343434;
