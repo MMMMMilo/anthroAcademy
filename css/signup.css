@@ -22,6 +22,11 @@ main{
     display: flex;
     gap: 8rem;
 }
+@media screen and (max-width:768px){
+    .left-col .select{
+        gap:4rem;
+    }
+}
 .left-col .select span{
     font-size: var(--h3-font-size);
 }
