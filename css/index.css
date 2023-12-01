@@ -18,15 +18,16 @@
 .cover h1 span{
     font-size: clamp(1rem,1.667vw,1.5rem);
 }
-@media screen and (width<1024px){
-    .cover .cover-img,.cover-deco-md,.cover-quote-md{
-        text-align: center;
-    }
-    .cover .cover-quote-lg, .cover-deco-lg{
-        display: none;
-    }
+.cover .cover-img,.cover-deco-md,.cover-quote-md{
+    text-align: center;
 }
-@media screen and (width>=1024px){
+.cover .cover-quote-lg, .cover-deco-lg{
+    display: none;
+}
+@media screen and (min-width:1024px){
+    .cover .cover-quote-lg, .cover-deco-lg{
+        display: block;
+    }
     .cover .wrap{
         display: grid;
         gap: 1rem;
@@ -223,7 +224,7 @@ h2{
     display: block;
     line-height: 1.5;
 }
-@media screen and (width>=1024px){
+@media screen and (min-width:1024px){
     .news .news-list{
         padding: 4rem 0;
         margin: 0 8rem;
@@ -249,13 +250,13 @@ h2{
     max-width: 90%;
     margin: auto;
     display: flex;
-    gap: 2.5rem;
+    gap:.9rem;
     justify-content: center;
     padding-top: 10rem;
 }
-@media screen and (width<768px) {
+@media screen and (min-width:768px) {
     .feature .wrap{
-        gap:.9rem;
+        gap: 2.5rem;
     }
 } 
 .feature .item{

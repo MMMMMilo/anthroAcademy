@@ -36,19 +36,18 @@
 .selection .lightbox span{
     font-size: var(--p--font-size);
 }
-@media screen and (width<=768px){
-    .selection .wrap{
-        display: flex;
-        flex-direction: column;
-        /* gap: 1rem; */
-        align-items: center;
-    }
+.selection .wrap{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    align-items: center;
 }
-@media screen and (width>768px){
+
+@media screen and (min-width:768px){
     .selection .wrap{
         margin: 2.5rem auto;
         max-width: 90%;
-        display: flex;
+        flex-direction: row;
         gap: 1rem;
         justify-content: center;
     }
@@ -75,24 +74,22 @@
     width: 100%;
 }
 .course .wrap{
-    max-width:90%;
     margin:3rem auto;
-
 }
-.course .course-list{
-    margin:5rem auto 5rem auto;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
-}
-@media screen and (width<=768px){
+/* .course .course-list{
+    margin: auto;
+} */
+@media screen and (min-width:768px){
     .course .wrap{
-        margin: auto;
+        max-width:90%;
     }
     .course .course-list{
-        margin: auto;
-        gap: 1.5rem;
+        margin:5rem auto 5rem auto;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
     }
+
 }
 .course .course-list .course-card{
     /* flex-grow: 1;
@@ -102,6 +99,7 @@
     grid-template-columns:2/1fr ;
     gap: 1rem;
     padding: 1rem 2rem;
+    margin: 1rem 0;
     border:2px solid #02DEC5;
     border-radius: 0.625rem;
     position: relative;

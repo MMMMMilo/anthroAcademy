@@ -24,7 +24,7 @@
 .banner .banner-text h2{
     font-size: var(--h2-font-size);
 }
-@media screen and (width<=768px){
+@media screen and (max-width:768px){
     .banner .banner-text h1{
         font-size: var(--h3-font-size);
     }
