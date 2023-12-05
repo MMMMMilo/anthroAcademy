@@ -12,35 +12,79 @@ body{
     box-sizing: border-box;
 }
 header{
-    /* width: 100%; */
+    width: 100%;
     position: sticky;
     top: 0;
     background-color: #212A2B;
     z-index: 99;
 }
 header .wrap{
-    /* max-width: 1200px; */
-    width: 90%;
-    height: 70px;
-    display: flex;
+    width: 100%;
     margin: auto;
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
 header .wrap .nav-logo img{
     width: 100%;
     vertical-align: middle;
+    margin: 1rem;
 }
-header .wrap .nav-bar ul{
+#nav-switch{
+    display: none;
+}
+header .wrap nav .nav-bar{
+    list-style: none;
     display: flex;
 }
 header .wrap .nav-bar a{
     text-decoration: none;
-    font-size: var(--p--font-size);
-    color:#fff ;
-    padding: 10px;
+    font-size: var(--h3-font-size);
+    color: #fff;
+    padding: 0 10px;
 }
-
+@media screen and (max-width:1024px){
+    header .wrap{
+        position: relative;
+        justify-content: left;
+    }
+    header nav{
+        display: none;
+    }
+    #nav-switch:checked ~ header nav{
+        display: block;
+    }
+    header nav .nav-bar{
+        position: fixed;
+        z-index: 100;
+        inset: 0 0 0 40%;
+        background-color: rgba(2, 222, 196, .1);
+        backdrop-filter: blur(1.5rem);
+        padding: min(20vh,10rem) 2.5rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        letter-spacing: 3px;
+    }
+    header .hb{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        z-index: 999;
+        top: 30%;
+        right: 10%;
+    }
+    header .hb span{
+        width: 80%;
+        height:2px;
+        background-color: #FFF; 
+        margin: 3px auto;
+        border-radius: 5px;
+        animation: crossLine 1s linear;
+    }
+}
 footer .wrap{
     max-width:90%;
     margin: 1rem auto;

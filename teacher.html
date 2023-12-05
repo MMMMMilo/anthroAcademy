@@ -17,13 +17,19 @@
 
 </head>
 <body>
+    <input type="checkbox" id="nav-switch">
     <header>
         <div class="wrap">
             <a href="index.html" class="nav-logo">
                 <img src="img/nav-LOGO.png" alt="AnthroAcademy-LOGO">
             </a>
-            <nav class="nav-bar">
-                <ul>
+            <label for="nav-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul class="nav-bar">
                     <li><a href="teacher.html">講師邀請</a></li>
                     <li><a href="course.html">課程報名</a></li>
                     <li><a href="news.html">最新消息</a></li>
@@ -34,7 +40,6 @@
             </nav>
         </div>
     </header>
-
     <div class="banner">
         <div class="banner-pic">
             <img src="img/teacher-banner-photo.png" alt="teacher-banner">
@@ -50,10 +55,9 @@
             <span>#ESG</span>
         </div>
     </div>
-
     <main>
         <div class="teacher-intro">
-            <div class="row">
+            <div class="container">
                 <div class="photo-left" id="photo">
                     <img src="img/teacher-card-photo1.png" alt="teacher-photo">
                 </div>
@@ -70,7 +74,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
+            <div class="container">
                 <div class="photo-right" id="photo">
                     <img src="img/teacher-card-photo2.png" alt="teacher-photo">
                 </div>
@@ -86,7 +90,7 @@
                     </a> 
                 </div>
             </div>
-            <div class="row">
+            <div class="container">
                 <div class="photo-left" id="photo">
                     <img src="img/teacher-card-photo3.png" alt="teacher-photo">
                 </div>

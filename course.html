@@ -12,13 +12,19 @@
     <script src="https://kit.fontawesome.com/db0d0bbe07.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <input type="checkbox" id="nav-switch">
     <header>
         <div class="wrap">
             <a href="index.html" class="nav-logo">
                 <img src="img/nav-LOGO.png" alt="AnthroAcademy-LOGO">
             </a>
-            <nav class="nav-bar">
-                <ul>
+            <label for="nav-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul class="nav-bar">
                     <li><a href="teacher.html">講師邀請</a></li>
                     <li><a href="course.html">課程報名</a></li>
                     <li><a href="news.html">最新消息</a></li>
@@ -29,179 +35,177 @@
             </nav>
         </div>
     </header>
-        <div class="selection">
-            <div class="wrap">
-                <div class="location">
-                    <h1>課程報名</h1>
-                    <span>◎ 北部地區</span>
-                    <span>◎ 中部地區</span>
-                    <span>◎ 南部地區</span>
-                    <span>◎ 東部地區</span>
-                    <span>◎ 外島</span>
+    <div class="selection">
+        <div class="wrap">
+            <div class="location">
+                <h1>課程報名</h1>
+                <span>◎ 北部地區</span>
+                <span>◎ 中部地區</span>
+                <span>◎ 南部地區</span>
+                <span>◎ 東部地區</span>
+                <span>◎ 外島</span>
+            </div>
+            <div class="map">
+                <img src="img/course-banner-map.png" alt="map">
+            </div>
+            <div class="lightbox">
+                <h2>北部地區</h2>
+                <span>臺北市、新北市、基隆市</span>
+                <span>新竹市、桃園市、新竹縣</span>
+                <a href="#" class="btn-primary">報名地區課程</a>
+            </div>
+        </div>
+    </div>
+    <div class="course">
+        <div class="wrap">
+            <div class="course-list">
+                <div class="course-card">
+                    <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="header">
+                        <span class="course-class">#證照</span>
+                        <div class="poster"><img src="img/frontpage-course-card-photo1.png" alt="course1">
+                        </div>
+                        <span class="date">2023.11.01</span>
+                    </div>
+                    <h3 class="title">ISO14064-1<br>溫室氣體盤查培訓課程</h3>
+                    <span class="company">卡比國際驗證</span>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <span>桃園市</span>
+                    </div>
                 </div>
-                <div class="map">
-                    <img src="img/course-banner-map.png" alt="map">
+                <div class="course-card">
+                    <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="header">
+                        <span class="course-class">#證照</span>
+                        <div class="poster"><img src="img/frontpage-course-card-photo2.png" alt="course2">
+                        </div>
+                        <span class="date">2023.12.01</span>
+                    </div>
+                    <h3 class="title">ISO14068<br>碳中和課程</h3>
+                    <span class="company">皮卡國際驗證</span>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <span>台北市</span>
+                    </div>
                 </div>
-                <div class="lightbox">
-                    <h2>北部地區</h2>
-                    <span>臺北市、新北市、基隆市</span>
-                    <span>新竹市、桃園市、新竹縣</span>
-                    <a href="#" class="btn-primary">報名地區課程</a>
+                <div class="course-card">
+                    <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="header">
+                        <span class="course-class">#講座</span>
+                        <div class="poster"><img src="img/frontpage-course-card-photo3.png" alt="course3">
+                        </div>
+                        <span class="date">2023.11.11</span>
+                    </div>
+                    <h3 class="title">CBAM碳權交易論壇</h3>
+                    <span class="company">環境保護聯會</span>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <span>高雄市</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="header">
+                        <span class="course-class">#證照</span>
+                        <div class="poster"><img src="img/course-card-photo4.png" alt="course4">
+                        </div>
+                        <span class="date">2023.11.01</span>
+                    </div>
+                    <h3 class="title">ISO 14064-2<br>溫室氣體底換專案課程</h3>
+                    <span class="company">卡比國際驗證</span>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <span>桃園市</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="header">
+                        <span class="course-class">#證照</span>
+                        <div class="poster"><img src="img/course-card-photo5.png" alt="course5">
+                        </div>
+                        <span class="date">2023.12.01</span>
+                    </div>
+                    <h3 class="title">ISO14067<br>商品碳足跡查證課程</h3>
+                    <span class="company">皮卡國際驗證</span>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <span>台北市</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="header">
+                        <span class="course-class">#講座</span>
+                        <div class="poster"><img src="img/course-card-photo6.png" alt="course6">
+                        </div>
+                        <span class="date">2023.11.11</span>
+                    </div>
+                    <h3 class="title">循環經濟研討會</h3>
+                    <span class="company">環境保護聯合會</span>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <span>高雄市</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="header">
+                        <span class="course-class">#證照</span>
+                        <div class="poster"><img src="img/course-card-photo7.png" alt="course7">
+                        </div>
+                        <span class="date">2023.11.01</span>
+                    </div>
+                    <h3 class="title">溫室氣體專業人才課程</h3>
+                    <span class="company">卡比國際驗證</span>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <span>桃園市</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="header">
+                        <span class="course-class">#證照</span>
+                        <div class="poster"><img src="img/course-card-photo8.png" alt="course8">
+                        </div>
+                        <span class="date">2023.12.01</span>
+                    </div>
+                    <h3 class="title">ESG永續報告書撰寫課程</h3>
+                    <span class="company">皮卡國際驗證</span>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <span>台北市</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="header">
+                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="course-class">#講座</span>
+                        <div class="poster"><img src="img/course-card-photo9.png" alt="course9">
+                        </div>
+                        <span class="date">2023.11.11</span>
+                    </div>
+                    <h3 class="title">SBTi<br>科學基礎減量目標講座</h3>
+                    <span class="company">環境保護聯合會</span>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <span>高雄市</span>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="course">
-            <div class="wrap">
-                <div class="course-list">
-                    <div class="course-card">
-                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="header">
-                            <span class="course-class">#證照</span>
-                            <div class="poster"><img src="img/frontpage-course-card-photo1.png" alt="course1">
-                            </div>
-                            <span class="date">2023.11.01</span>
-                        </div>
-                        <h3 class="title">ISO14064-1<br>溫室氣體盤查培訓課程</h3>
-                        <span class="company">卡比國際驗證</span>
-                        <div class="location">
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                            <span>桃園市</span>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="header">
-                            <span class="course-class">#證照</span>
-                            <div class="poster"><img src="img/frontpage-course-card-photo2.png" alt="course2">
-                            </div>
-                            <span class="date">2023.12.01</span>
-                        </div>
-                        <h3 class="title">ISO14068<br>碳中和課程</h3>
-                        <span class="company">皮卡國際驗證</span>
-                        <div class="location">
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                            <span>台北市</span>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="header">
-                            <span class="course-class">#講座</span>
-                            <div class="poster"><img src="img/frontpage-course-card-photo3.png" alt="course3">
-                            </div>
-                            <span class="date">2023.11.11</span>
-                        </div>
-                        <h3 class="title">CBAM碳權交易論壇</h3>
-                        <span class="company">環境保護聯會</span>
-                        <div class="location">
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                            <span>高雄市</span>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="header">
-                            <span class="course-class">#證照</span>
-                            <div class="poster"><img src="img/course-card-photo4.png" alt="course4">
-                            </div>
-                            <span class="date">2023.11.01</span>
-                        </div>
-                        <h3 class="title">ISO 14064-2<br>溫室氣體底換專案課程</h3>
-                        <span class="company">卡比國際驗證</span>
-                        <div class="location">
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                            <span>桃園市</span>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="header">
-                            <span class="course-class">#證照</span>
-                            <div class="poster"><img src="img/course-card-photo5.png" alt="course5">
-                            </div>
-                            <span class="date">2023.12.01</span>
-                        </div>
-                        <h3 class="title">ISO14067<br>商品碳足跡查證課程</h3>
-                        <span class="company">皮卡國際驗證</span>
-                        <div class="location">
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                            <span>台北市</span>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="header">
-                            <span class="course-class">#講座</span>
-                            <div class="poster"><img src="img/course-card-photo6.png" alt="course6">
-                            </div>
-                            <span class="date">2023.11.11</span>
-                        </div>
-                        <h3 class="title">循環經濟研討會</h3>
-                        <span class="company">環境保護聯合會</span>
-                        <div class="location">
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                            <span>高雄市</span>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="header">
-                            <span class="course-class">#證照</span>
-                            <div class="poster"><img src="img/course-card-photo7.png" alt="course7">
-                            </div>
-                            <span class="date">2023.11.01</span>
-                        </div>
-                        <h3 class="title">溫室氣體專業人才課程</h3>
-                        <span class="company">卡比國際驗證</span>
-                        <div class="location">
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                            <span>桃園市</span>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="header">
-                            <span class="course-class">#證照</span>
-                            <div class="poster"><img src="img/course-card-photo8.png" alt="course8">
-                            </div>
-                            <span class="date">2023.12.01</span>
-                        </div>
-                        <h3 class="title">ESG永續報告書撰寫課程</h3>
-                        <span class="company">皮卡國際驗證</span>
-                        <div class="location">
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                            <span>台北市</span>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <div class="header">
-                            <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                            <span class="course-class">#講座</span>
-                            <div class="poster"><img src="img/course-card-photo9.png" alt="course9">
-                            </div>
-                            <span class="date">2023.11.11</span>
-                        </div>
-                        <h3 class="title">SBTi<br>科學基礎減量目標講座</h3>
-                        <span class="company">環境保護聯合會</span>
-                        <div class="location">
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                            <span>高雄市</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>   
-        <div class="pages-primary">
-            <button><i class="fa-solid fa-caret-left" style="color: #ffffff;"></i></button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button><i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></button>
-        </div>
-
+    </div>   
+    <div class="pages-primary">
+        <button><i class="fa-solid fa-caret-left" style="color: #ffffff;"></i></button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button><i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></button>
+    </div>
     <footer>
         <div class="wrap">
             <div class="footer-link">

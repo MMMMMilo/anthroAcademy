@@ -64,9 +64,8 @@
     max-width: 80%;
     margin:5rem auto 5rem auto;
     display: grid;
-    grid-template-columns:repeat(4,minmax(200px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
     /* grid-template-columns:repeat(4,250px); */
-    overflow-x: scroll; 
     gap: 1.5rem;
 }
 .teacher .teacher-intro{
@@ -252,11 +251,11 @@ h2{
 .feature .item{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     gap: 0.5rem;;
-    width: 110px;
-    height: 110px;
+    width: 50px;
+    height: 50px;
     padding: .5rem;
     border: 2px solid #fff;
     border-radius: 38% 62% 63% 37%;
@@ -272,6 +271,9 @@ h2{
     border: 2px solid #fff;
     animation: rotateOutline 5s linear infinite;
 }
+.feature .item img{
+    display: none;
+}
 .feature .item::before{
     border-radius: 145% 86% 80% 90%;
 }
@@ -286,8 +288,7 @@ h2{
         transform: rotate(360deg);
     }
 }
-
-feature .item h3{
+.feature .item h3{
     font-size: var(--h3-font-size);
     line-height: 1.5;
     color: #fff;
@@ -296,7 +297,15 @@ feature .item h3{
     .feature .wrap{
         gap: 3rem;
     }
+    .feature .item{
+        width: 110px;
+        height: 110px;
+        align-items: center;
+    }
     .feature .item h3{
         font-weight: 600;
+    }
+    .feature .item img{
+        display:block ;
     }
 } 

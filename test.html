@@ -1,32 +1,135 @@
-<section class="page">
-	<section class="content">
-		<main>
-			<h2>Product Information</h2>
-			<details>
-  				<summary>What dietary options do you offer?</summary>
-  				<p>We offer a range of options, including gluten-free, vegan, and nut-free treats. Our goal is to ensure that everyone can indulge in our delicious baked goods without compromising their dietary preferences or restrictions.</p>
-			</details>
-			<details>
-  				<summary>Can I place a custom order?</summary>
-  				<p>Absolutely! We love helping you celebrate special moments with our custom creations. To ensure we can fulfill your request, we recommend placing custom orders at least 72 hours in advance. This allows us to carefully craft and personalize your order, guaranteeing a fresh and exquisite experience for your special occasion.</p>
-			</details>
-			<details>
-  				<summary>Do you offer delivery services?</summary>
-  				<p>Yes, we provide delivery services to make enjoying our treats even more convenient. Simply add your desired items to the cart and proceed to checkout to see if your location is eligible for delivery.</p>
-			</details>
-		</main>
-	</section>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #212A2B;
+    z-index: 99;
+}
+#nav-switch{
+    display: none;
+}
+header .wrap{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .wrap .nav-logo img{
+    width: 100%;
+    vertical-align: middle;
+    margin: 1rem;
+}
+header .wrap .nav-bar ul{
+    list-style: none;
+    display: flex;
+}
+header .wrap .nav-bar a{
+    text-decoration: none;
+    font-size: var(--h3-font-size);
+    color:#fff ;
+    padding: 0 10px;
+}
+@media screen and (max-width:768px){
+    header .wrap{
+        /* flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px; */
+		position: relative;
+    }
+    header .hb{
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+		position: absolute;
+		z-index: 999;
+		right: 1rem;
+		top: 1rem;
+    }
+    header .hb span{
+        width: 80%;
+        height:2px;
+        background-color: #212A2B; 
+        margin: 3px auto;
+    }
+    header .nav-bar{
+        display: none;
+		list-style: none;
+        inset: 0 25% 0 0;
+        background-color: #fa0;
+
+		position: fixed;
+		z-index: 100;
+		inset: 0 0 0 10%;
+		background-color: #000;
+		flex-direction: column;
+
+    }
+    #nav-switch:checked ~ header .nav-bar{
+        display: block;
+    }
+    header .nav-bar ul{
+        
+    }
+}
+
+	</style>
+</head>
+<body>
+
+	<input type="checkbox" id="nav-switch">
+	<header>
+		<div class="wrap">
+			<a href="index.html" class="nav-logo">
+				<img src="img/nav-LOGO.png" alt="AnthroAcademy-LOGO">
+			</a>
+			<label for="nav-switch" class="hb">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<nav>
+				<ul class="nav-bar">
+					<li><a href="teacher.html">講師邀請</a></li>
+					<li><a href="course.html">課程報名</a></li>
+					<li><a href="news.html">最新消息</a></li>
+					<li><a href="journalList.html">綠人月刊</a></li>
+					<li><a href="about.html">關於綠人</a></li>
+					<li><a href="signup.html">登入/註冊</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
 
-
-
-<div class="pages-secondary">
-	<button><i class="fa-solid fa-caret-left" style="color: #212a2b;"></i></button>
-	<button>1</button>
-	<button>2</button>
-	<button>3</button>
-	<button>4</button>
-	<button>5</button>
-	<button><i class="fa-solid fa-caret-right" style="color: #212a2b;"></i></button>
-</div>  
+	<!-- <section class="page">
+		<section class="content">
+			<main>
+				<h2>Product Information</h2>
+				<details>
+					  <summary>What dietary options do you offer?</summary>
+					  <p>We offer a range of options, including gluten-free, vegan, and nut-free treats. Our goal is to ensure that everyone can indulge in our delicious baked goods without compromising their dietary preferences or restrictions.</p>
+				</details>
+				<details>
+					  <summary>Can I place a custom order?</summary>
+					  <p>Absolutely! We love helping you celebrate special moments with our custom creations. To ensure we can fulfill your request, we recommend placing custom orders at least 72 hours in advance. This allows us to carefully craft and personalize your order, guaranteeing a fresh and exquisite experience for your special occasion.</p>
+				</details>
+				<details>
+					  <summary>Do you offer delivery services?</summary>
+					  <p>Yes, we provide delivery services to make enjoying our treats even more convenient. Simply add your desired items to the cart and proceed to checkout to see if your location is eligible for delivery.</p>
+				</details>
+			</main>
+		</section>
+	</section> -->
+</body>
+</html>
