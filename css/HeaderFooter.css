@@ -60,6 +60,7 @@ header .wrap .nav-bar a{
         inset: 0 0 0 40%;
         background-color: rgba(2, 222, 196, .1);
         backdrop-filter: blur(1.5rem);
+        -webkit-backdrop-filter: blur(1.5rem);
         padding: min(20vh,10rem) 2.5rem;
         flex-direction: column;
         gap: 1.5rem;

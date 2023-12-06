@@ -127,7 +127,7 @@ h2{
 /* ============================================course */
 .course{
     text-align: center;
-    padding: top 2.5em;
+    padding-top: 2.5em;
     width: 100%;
 }
 .course .wrap{
@@ -189,16 +189,9 @@ h2{
 
 }
 /* ============================================news */
-/* .news, .feature{
-    width: 100%;
-    margin: auto;
-    background-color: #DDD;
-    background-image: url(../img/frontpage-news-backgroud-textures.png); 
-    padding-top: 2rem;
-} */
 .news{
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
     background-color: #DDD;
     background-image: url(../img/frontpage-news-backgroud-textures.png); 
     padding-top: 2rem;
@@ -206,10 +199,8 @@ h2{
 .news .wrap{
     max-width:80%;
     margin:auto;
-    padding:0 auto 3rem auto;
     color: #343434;
     text-align: center;
-
 }
 .news .news-list{
     padding: 0 1rem 3rem 1rem;
@@ -235,6 +226,9 @@ h2{
 .news .news-list .news-link .title{
     font-size: var(--h3-font-size);
     font-weight: 600;
+}
+.news .path-secondery{
+    margin-bottom: 2rem;
 }
 /* ============================================feature */
 .feature{
