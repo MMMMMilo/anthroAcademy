@@ -81,7 +81,6 @@
     justify-content: center;
     margin: 20px 0;
 }
-
 .pages-primary button, .pages-secondary button{
     background-color: transparent;
     border-radius: 100px;
@@ -101,4 +100,9 @@
     padding: 10px 15px;
 }
 
-
+@media screen and (max-width:768px){
+    .pages-primary button, .pages-secondary button{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+}

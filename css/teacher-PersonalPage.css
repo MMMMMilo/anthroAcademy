@@ -6,11 +6,22 @@ main .cover{
     max-width: 90%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+}
+@media screen and (max-width:768px) {
+    main .cover{
+        position: relative;
+    }
 }
 main .cover .personal-photo{
     width: 50%;
     aspect-ratio: 550/550;
+}
+@media screen and (max-width:768px) {
+    main .cover .personal-photo{
+        width: 90%;
+        margin: 10% auto 5%;
+    }
 }
 main .cover .personal-photo img{
     display: block;
@@ -26,23 +37,18 @@ main .cover .personal-intro{
     grid-template-columns: repeat(2/ 1fr);
     gap: 1rem;
     align-self: flex-end;
-    padding: 5rem;
+    padding: 5% 2%;
 }
-@media screen and (max-width:1024px) {
-    main .cover{
-        position: relative;
-    }
-    main .cover .personal-photo{
-        width: 70%;
-        margin: 10% auto 5%;
-    }
+@media screen and (max-width:768px) {
     main .cover .personal-intro{
         position: absolute;
-        bottom: 0;
-        left: 5%;
+        inset: 40% 0 0 0;
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        align-content: center;
+        justify-content: center;
+        gap: .5rem;
+        padding: 1rem;
         background-color: rgba(16, 146, 131, 0.7);
         border-radius: 1rem;
     }
@@ -52,6 +58,11 @@ main .cover .personal-intro h2{
     font-weight: 600;
     grid-row: 1/2;
     grid-column: 1/2;
+}
+@media screen and (max-width:768px) {
+    main .cover .personal-intro h2{
+        font-size: var(--h2-font-size);
+    }
 }
 main .cover .personal-intro .category{
     font-size: var(--p--font-size);
@@ -72,32 +83,42 @@ main .cover .personal-intro .phone{
     grid-row: 3/4;
     grid-column: 2/3;
 }
-
-main .cover .personal-intro .location ~ .phone{
-    display: flex;
-    align-items: center;
-}
 span{
     font-size: var(--p--font-size);
 }
 .personal-content{
     max-width: 90%;
     margin: auto;
-    padding: 6rem 0;
+    padding: 6rem 0 0;
 }
 .personal-content .item{
     display: flex;
     align-items: center;
     padding: 3rem 0;
-    margin: 2rem;
+    margin: 2rem 0;
     background-image: radial-gradient(  rgba(254, 254, 254, 0) 20%, rgba(2, 222, 197, 0.7) 200%); 
     border: .5px solid #02DEC5;
     border-radius: 1rem;
+}
+@media screen and (max-width:768px) {
+    .personal-content .item{
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1.5rem;
+    }
 }
 .personal-content .item .title{
     width: 20%;
     text-align: center;
     border-right: 3px solid #fff;
+}
+@media screen and (max-width:768px) {
+    .personal-content .item .title{
+        width: 100%;
+        display: inline-block;
+        border-right: 0px;
+        border-bottom: 1px solid #fff;
+    }
 }
 .personal-content .item .title h3{
     font-size: var(--h3-font-size);
@@ -110,40 +131,37 @@ span{
     padding-left: 6rem;
     
 }
+@media screen and (max-width:768px) {
+    .personal-content .item .txt{
+        width: 100%;
+        padding: 2rem 0;
+    }
+}
 .personal-content .item:nth-child(1), .personal-content .item:nth-child(2) .txt{
     text-align: justify;
+}
+@media screen and (max-width:768px) {
+    .personal-content .item:nth-child(3), .personal-content .item:nth-child(4) .txt{
+        text-align: center;
+    }
 }
 .personal-content .item .txt p{
     font-size: var(--p--font-size);
     line-height: 1.5rem;
 }
-@media screen and (max-width:1024px) {
-    .personal-content .item{
-        flex-direction: column;
-        padding: 1rem;
-        margin: 1.5rem;
-        /* flex-wrap: wrap; */
-    }
-    .personal-content .item .title{
-        width: 100%;
-        display: inline-block;
-        border-right: 0px;
-        border-bottom: 1px solid #fff;
-    }
-    .personal-content .item .txt{
-        width: 100%;
-        padding: 2rem 0;
-    }
-    .personal-content .item:nth-child(3), .personal-content .item:nth-child(4) .txt{
-        text-align: center;
-    }
-}
 p+P{
     padding-top: 1rem;
 }
+.path{
+    width: 90%;
+    margin: auto;
+    text-align: right;
+}
 .path-primary{
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    /* 小尺寸至中??? */
+    margin-bottom: 1rem;
+}
+@media screen and (max-width:768px) {
+    .path{
+        text-align: center;
+    }
 }

@@ -6,7 +6,7 @@ main{
     position: relative;
 }
 main .wrap{
-    padding: 4rem  2rem;
+    padding: 4rem  2rem 0;
 }
 .journal-index span, .title span{
     font-size: var(--p--font-size);
@@ -157,12 +157,18 @@ main .wrap article .container .item p{
         column-count:auto
     }
 }
-
+.path{
+    width: 90%;
+    margin: auto;
+    text-align: right;
+}
 .path-secondery{
-    position: absolute;
-    bottom: 2%;
-    right: 50%;
-    left: 50%;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width:768px) {
+    .path{
+        text-align: center;
+    }
 }
 
 

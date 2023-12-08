@@ -68,6 +68,9 @@ a{
 .item .sub-category{
     order: 1;
 }
+.item .sub-category span{
+    font-weight: 800;
+}
 .item .journal-pic{
     order: 3;
 }
@@ -76,16 +79,11 @@ a{
 }
 
 @media screen and (min-width:1024px){
-    main .wrap{
-        width: 80%;
-        margin: auto;
-    }
     .item{
         display: grid;
         grid-template-rows: 50px 115px;
         grid-template-columns: 35% 45% auto;
         gap: 1rem;
-        /* padding: 2.5rem 0; */
         text-align:left;
     }
     .item .journal-pic{
