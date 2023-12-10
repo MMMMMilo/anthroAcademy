@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     $('#openContact').click(function(){
-        $('#contact').toggle();
+        $('#contact').show();
     })
     $('#closeContact').click(function(){
         $('#contact').hide();
@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#openService').click(function(){
-        $('.service').toggle();
+        $('.service').show();
     })
     $('#closeService').click(function(){
         $('.service').hide();
@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#openPrivacy').click(function(){
-        $('.privacy').toggle();
+        $('.privacy').show();
     })
     $('#closePrivacy').click(function(){
         $('.privacy').hide();

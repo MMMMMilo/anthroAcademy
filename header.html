@@ -6,9 +6,10 @@
     <title>AnthroAcademy</title>
     <link rel="icon" href="img/ANTHRO ACADEMY.ico">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/HeaderFooter.css">
     <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/header.css">
     <script src="https://kit.fontawesome.com/db0d0bbe07.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
     <input type="checkbox" id="nav-switch">
@@ -34,5 +35,44 @@
             </nav>
         </div>
     </header>
+    <div class="signup">
+        <div class="left-col">
+            <h1>Welcome</h1>
+            <div class="select">
+                <span>會員登入</span>
+                <span>註冊會員</span>
+            </div>
+            <div class="other-signup">
+                <button><span><i class="fa-brands fa-google" style="color: #212a2b;"></i></span>&nbsp使用GOOGLE註冊
+                </button>
+                <button><span><i class="fa-brands fa-line" style="color: #212a2b;"></i></span>&nbsp使用LINE註冊</button>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <form action="#">
+                <input type="text" name="name" placeholder="用戶名稱">
+                <input type="email" name="mail" placeholder="MAIL">
+                <input type="tel" name="tel" placeholder="電話號碼">
+                <input type="password" name="password" placeholder="密碼">
+                <select name="gender" id="">
+                    <option>性別(選填)</option>
+                    <option>男</option>
+                    <option>女</option>
+                    <option>多元性別</option>
+                </select>
+                <label for="date">出生年月日</label>
+                <input type="date" id="date">
+                <label for="">
+                    <input type="checkbox" id="suscribe">我同意使用綠人學院提供的服務並訂閱電子報
+                </label>
+                <label for="">
+                    <input type="checkbox" id="privacy">
+                    我已詳細閱讀服務條款與隱私權保護政策
+                </label>
+                <button class="submit-primary">立即加入</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

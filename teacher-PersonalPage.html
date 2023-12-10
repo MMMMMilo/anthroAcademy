@@ -6,36 +6,13 @@
     <title>Teacher-PersonalPage-QIU-DE-JU</title>
     <link rel="icon" href="img/ANTHRO ACADEMY.ico">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/HeaderFooter.css">
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/teacher-PersonalPage.css">
     <script src="https://kit.fontawesome.com/db0d0bbe07.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
-    <input type="checkbox" id="nav-switch">
-    <header>
-        <div class="wrap">
-            <a href="index.html" class="nav-logo">
-                <img src="img/nav-LOGO.svg" alt="AnthroAcademy-LOGO">
-            </a>
-            <label for="nav-switch" class="hb">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <nav>
-                <ul class="nav-bar">
-                    <li><a href="teacher.html">講師邀請</a></li>
-                    <li><a href="course.html">課程報名</a></li>
-                    <li><a href="news.html">最新消息</a></li>
-                    <li><a href="journalList.html">綠人月刊</a></li>
-                    <li><a href="about.html">關於綠人</a></li>
-                    <li><a href="signin.html">登入/註冊</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+    <header id="main-header"></header>
     <main>
         <div class="cover">
             <div class="personal-photo">
@@ -62,7 +39,6 @@
                 </div>
             </div>
         </div>
-
         <div class="personal-content">
             <div class="item">
                 <div class="title">
@@ -109,16 +85,10 @@
             <a href="teacher.html" class="path-primary"><img src="img/back-primary.svg" alt="back">&nbspBACK</a>
         </div>
     </main>
-
-    <footer>
-        <div class="wrap">
-            <div class="footer-link">
-                <a href="#">聯絡綠人</a>
-                <a href="#">服務條款</a>
-                <a href="#">隱私權政策</a>
-            </div>
-            <span class="copyright">Copyright© 2023  rights reserved.</span>
-        </div>
-    </footer>
+    <footer id="main-footer"></footer>
+    <script>
+        $('#main-header').load('header.html');
+        $('#main-footer').load('footer.html');
+    </script>
 </body>
 </html>

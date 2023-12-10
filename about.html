@@ -6,38 +6,13 @@
     <title>About</title>
     <link rel="icon" href="img/ANTHRO ACADEMY.ico">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/HeaderFooter.css">
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/about.css">
     <script src="https://kit.fontawesome.com/db0d0bbe07.js" crossorigin="anonymous"></script>
-    <script>
-
-    </script>
+    <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
-    <input type="checkbox" id="nav-switch">
-    <header>
-        <div class="wrap">
-            <a href="index.html" class="nav-logo">
-                <img src="img/nav-LOGO.svg" alt="AnthroAcademy-LOGO">
-            </a>
-            <label for="nav-switch" class="hb">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <nav>
-                <ul class="nav-bar">
-                    <li><a href="teacher.html">講師邀請</a></li>
-                    <li><a href="course.html">課程報名</a></li>
-                    <li><a href="news.html">最新消息</a></li>
-                    <li><a href="journalList.html">綠人月刊</a></li>
-                    <li><a href="about.html">關於綠人</a></li>
-                    <li><a href="signin.html">登入/註冊</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <header id="main-header"></header>
     <div class="banner">
         <div class="banner-pic">
             <img src="img/about-banner-photo.png" alt="about">
@@ -49,7 +24,6 @@
     </div> 
     <main>
         <div class="faq">
-            <h2>FAQ</h2>
             <ul class="question-list">
                 <li>
                     <input type="checkbox" id="question1">
@@ -90,35 +64,11 @@
             </ul>
         </div>
     </main>
-    <footer>
-        <div class="wrap">
-            <div class="footer-link">
-                <a href="#" id="openContact">聯絡綠人</a>
-                <a href="#">服務條款</a>
-                <a href="#">隱私權政策</a>
-            </div>
-            <span class="copyright">Copyright© 2023  rights reserved.</span>
-        </div>
-    </footer>
-    <div class="contact" id="contact">
-        <form action="#" class="contact-inner">
-            <h2>Contact Us</h2>
-            <div class="row">
-                <input type="text" name="last-name" placeholder="姓氏"  class="text">
-                <input type="text" name="first-name" placeholder="名稱" class="text">
-            </div>
-            <div class="row">
-                <input type="tel" name="tel" placeholder="電話號碼" class="text">
-                <input type="email" name="mail" placeholder="信箱" class="text">
-            </div>
-            <textarea name="message" cols="30" rows="10" class="text">想說的話</textarea>
-            <button class="submit-secondary">送出</button>
-            <button class="close-secondary" id="closeContact">X</button>
-        </form>
-    </div>
-    
-    <script src="js/jquery-3.7.1.js"></script>
-    <script src="js/popup.js"></script>
+    <footer id="main-footer"></footer>
+    <script>
+        $('#main-header').load('header.html');
+        $('#main-footer').load('footer.html');
+    </script>
 </body>
 
 </html>
