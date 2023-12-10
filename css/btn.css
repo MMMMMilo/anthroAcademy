@@ -10,29 +10,27 @@
     padding: .3rem 2rem;
 }
 /* ================================================== */
-.submit-primary{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    background-color: #02DEC5;
-    color: #212A2B;
-    line-height: 2;
+
+.submit-primary,.submit-secondary{
+    appearance: none;
     outline: none;
-    border-style: none;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 1rem;
     font-size: var(--h3-font-size);
     font-weight: 600;
+    margin-top: 1rem;
+}
+.submit-primary{
+    background-color: #02DEC5;
+    color: #212A2B;
 }
 .submit-secondary{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    background-color: transparent;
+    background-color:#212a2b;
     color: #fff;
-    line-height: 2;
-    outline: none;
-    border-style: none;
-    border: 1px solid #fff;
 }
+
 /* ======================================== */
 .path-primary, .path-secondery{
     text-decoration: none;
@@ -40,6 +38,7 @@
     background-color: transparent;
     font-size: var(--p--font-size);
     padding: var(--p--font-size);
+    font-weight: 600;
     letter-spacing: 5px;
     display: inline-block;
 }
@@ -73,6 +72,17 @@
     height: 2rem;
     font-size: 1rem;
     line-height: 2rem;
+}
+.close-secondary{
+    border: 0;
+    background-color: #212a2b;
+    color: #FFF;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    border-radius: 3rem;
+    text-align: center;
 }
 /* ============================================= */
 .pages-primary, .pages-secondary{

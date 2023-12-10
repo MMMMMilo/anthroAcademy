@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/about.css">
     <script src="https://kit.fontawesome.com/db0d0bbe07.js" crossorigin="anonymous"></script>
+    <script>
+
+    </script>
 </head>
 <body>
     <input type="checkbox" id="nav-switch">
@@ -30,7 +33,7 @@
                     <li><a href="news.html">最新消息</a></li>
                     <li><a href="journalList.html">綠人月刊</a></li>
                     <li><a href="about.html">關於綠人</a></li>
-                    <li><a href="signup.html">登入/註冊</a></li>
+                    <li><a href="signin.html">登入/註冊</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,61 +50,75 @@
     <main>
         <div class="faq">
             <h2>FAQ</h2>
-            <div class="question-list">
-                <button class="question">
-                    <h3>講師的教學風格是怎樣的？</h3>
-                    <span><i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i></span>
-                </button>
-                <button class="question">
-                    <h3>講師是否提供辦公時間或諮詢服務？</h3>
-                    <span><i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i></span>
-                </button>
-                <button class="question">
-                    <h3>講師是否有專業證照？</h3>
-                    <span><i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i></span>
-                </button>
-                <button class="question">
-                    <h3>月刊內容是否由專業作者或業界專家編寫？</h3>
-                    <span><i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i></span>
-                </button>
-                <button class="question">
-                    <h3>能否訂閱產業動態通訊或新聞快報？</h3>
-                    <span><i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i></span>
-                </button>
-            </div>
-        </div>
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <form action="#">
-                <div class="row">
-                    <input type="text" name="last-name" placeholder="姓氏">
+            <ul class="question-list">
+                <li>
+                    <input type="checkbox" id="question1">
+                    <label for="question1" class="question">
+                        <h3>講師的教學風格是怎樣的？</h3>
                     </label>
-                    <input type="text" name="first-name" placeholder="名稱">
+                    <p class="answer">
+                    講師的教學風格以生動互動、案例分析為主，激發學生學習興趣。
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" id="question2">
+                    <label for="question2" class="question">
+                        <h3>講師是否提供辦公時間或諮詢服務？</h3>
                     </label>
-                </div>
-                <div class="row">
-                    <input type="tel" name="tel" placeholder="電話號碼">
+                    <p class="answer">
+                        請直接講師個人頁面中的聯繫方式直接與老師聯繫洽詢。
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" id="question4">
+                    <label for="question4" class="question">
+                        <h3>月刊內容是否由專業作者或業界專家編寫？</h3>
                     </label>
-                    <input type="email" name="mail" placeholder="信箱">
-                </div>
-                <div class="row-bottom">
+                    <p class="answer">
+                        我們聘請專業作者和業界專家，確保文章具有高品質和可靠性。
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" id="question5">
+                    <label for="question5" class="question">
+                        <h3>能否訂閱產業動態通訊或新聞快報？</h3>
                     </label>
-                    <textarea name="text"  class="text" id="" cols="30" rows="10">想說的話</textarea>
-                    </label>
-                    <button class="submit-secondary">送出</button>
-                </div>
-            </form>
+                    <p class="answer">
+                        您可以訂閱我們的產業動態通訊，隨時掌握最新消息。
+                    </p>
+                </li>
+            </ul>
         </div>
     </main>
     <footer>
         <div class="wrap">
             <div class="footer-link">
-                <a href="#">聯絡綠人</a>
+                <a href="#" id="openContact">聯絡綠人</a>
                 <a href="#">服務條款</a>
                 <a href="#">隱私權政策</a>
             </div>
             <span class="copyright">Copyright© 2023  rights reserved.</span>
         </div>
     </footer>
+    <div class="contact" id="contact">
+        <form action="#" class="contact-inner">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <input type="text" name="last-name" placeholder="姓氏"  class="text">
+                <input type="text" name="first-name" placeholder="名稱" class="text">
+            </div>
+            <div class="row">
+                <input type="tel" name="tel" placeholder="電話號碼" class="text">
+                <input type="email" name="mail" placeholder="信箱" class="text">
+            </div>
+            <textarea name="message" cols="30" rows="10" class="text">想說的話</textarea>
+            <button class="submit-secondary">送出</button>
+            <button class="close-secondary" id="closeContact">X</button>
+        </form>
+    </div>
+    
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/popup.js"></script>
 </body>
+
 </html>

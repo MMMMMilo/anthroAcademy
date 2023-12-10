@@ -108,3 +108,85 @@ footer .footer-link a{
 footer .copyright{
     font-size: var(--p--font-size);
 }
+
+.popup{
+    width: 100%;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    inset: 0 0 0 0;
+    width: 100%;
+    /* height: 100vh; */
+    z-index: 999;
+    background-color: rgba(100, 100, 100, 0.1);
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    overflow: auto;
+    display: none;
+}
+h2{
+    font-size: var(--h2-font-size);
+    font-weight: 600;
+    text-align: center;
+}
+.contact .contact-inner{
+    max-width:70%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    border-radius:1rem;
+    background-color: rgba(255,255,255,.3) ;
+    color: #fff; 
+    padding: 2%;
+    position: relative;
+}
+.close-secondary{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+@media screen and (max-width:768px){
+    .contact .contact-inner{
+        max-width:70%;
+    }
+}
+.contact .contact-inner .row{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+.contact .contact-inner .row>*{
+    flex-grow: 1;
+}
+@media screen and (max-width:768px){
+    .contact .contact-inner .row{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+::placeholder,.contact .contact-inner .text{
+    color: #fff;
+    font-size: var(--p--font-size);
+}
+.contact .contact-inner .text{
+    outline: none;
+    border: none;
+    background-color:  rgba(255,255,255,0.1);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.service,.privacy{
+    max-width:70%;
+    margin:2.5rem auto;
+    text-align: justify;
+    /* display: flex;
+    flex-direction: column; */
+    border-radius:1rem;
+    background-color: rgba(255,255,255,.3) ;
+    color: #fff; 
+    padding: 2%;
+    line-height: 1.2;
+    position: relative;
+}
