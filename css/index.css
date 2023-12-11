@@ -75,7 +75,7 @@
     justify-content: center;
 }
 /* ========================================共用 */
-h2{
+.block-title{
     font-size: var(--h2-font-size);
     font-weight: 600;
     text-decoration: underline;

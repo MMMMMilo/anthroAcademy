@@ -1,25 +1,37 @@
 footer .wrap{
     max-width:90%;
-    margin: 1rem auto;
+    margin: 2rem auto 1rem;
     text-align: end;
     line-height: 1.5rem;
     background-color: #212a2b;
+}
+@media screen and (max-width:768px){
+    footer .wrap{
+        text-align: center;
+    }
 }
 footer .footer-link{
     display: flex;
     gap: 1.5rem;
     justify-content: end;
 }
-footer .footer-link a{
-    text-decoration: none;
+@media screen and (max-width:768px){
+    footer .footer-link{
+        justify-content: center;
+    }
+}
+footer .footer-link button{
+    border: none;
+    background-color: transparent;
     color: #fff;
     font-size: var(--p--font-size);
+    cursor: pointer;
 }
 footer .copyright{
     font-size: var(--p--font-size);
 }
 /* =============popup */
-.title{
+#contact .title{
     font-size: var(--h2-font-size);
     font-weight: 600;
     text-align: center;
