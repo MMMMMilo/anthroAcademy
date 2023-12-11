@@ -42,9 +42,11 @@
     <footer id="main-footer"></footer>
 
     <script>
-            $('#main-header').load('header.html');
-            $('#main-footer').load('footer.html');
-        document.addEventListener('DOMContentLoaded',function(){
+        //寫法一
+        //window.onload = function(){$('#main-header').load('header.html')}
+        //寫法二
+
+        window.addEventListener('load',function(){
             $('#main-header').load('header.html');
             $('#main-footer').load('footer.html');
         });

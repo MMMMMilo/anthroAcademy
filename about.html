@@ -66,8 +66,10 @@
     </main>
     <footer id="main-footer"></footer>
     <script>
-        $('#main-header').load('header.html');
-        $('#main-footer').load('footer.html');
+        window.addEventListener('load',function(){
+            $('#main-header').load('header.html');
+            $('#main-footer').load('footer.html');
+        });
     </script>
 </body>
 
