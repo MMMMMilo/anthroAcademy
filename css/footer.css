@@ -3,6 +3,7 @@ footer .wrap{
     margin: 1rem auto;
     text-align: end;
     line-height: 1.5rem;
+    background-color: #212a2b;
 }
 footer .footer-link{
     display: flex;
