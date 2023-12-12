@@ -1,30 +1,30 @@
-main{
+/* decoration */
+.zigzag{
     width: 100%;
-    background-color: #cecece;
-    /* background-image: url(../img/journal-textures.png); */
-    color: #212A2B;
+    height: 10px;
     position: relative;
-    padding: 10px 0;
+    z-index: 10;
 }
-main::before{
+.zigzag::before{
     content: "";
     display: block;
-    position: relative;
-    /* position: absolute; ?? */
+    position: absolute;
     background-image: linear-gradient(45deg, #cecece 25%, transparent 25%),linear-gradient(-45deg, #cecece 25%, #212a2b 25%);
     background-size: 10px 10px;
     height: 10px;
-    top: -10px;
+    width: 100%;
+    top: 0;
 }
-main::after{
-    content: "";
-    display: block;
-    position: relative;
-    /* position: absolute; ?? */
-    background-image: linear-gradient(135deg, #cecece 25%, transparent 25%),linear-gradient(-135deg, #cecece 25%, #212a2b 25%);
-    background-size: 10px 10px;
-    height: 10px;
-    bottom: -10px;
+.bottom{
+    transform: rotate(180deg);
+}
+/* main-position */
+main{
+    width: 100%;
+    background-color: #cecece;
+    background-image: url(../img/journal-textures.png);
+    color: #212A2B;
+    padding: 10px 0;
 }
 main .wrap{
     padding:2rem;
@@ -37,11 +37,11 @@ main .wrap{
     margin: 1rem auto 2rem;
 }
 .journal-index .month{
-    font-size: var(--h2-font-size);
+    font-size: var(--fs2-font-size);
     font-weight: 600;
 }
 .journal-index .category{
-    font-size: var(--h3-font-size);
+    font-size: var(--fs3-font-size);
 }
 @media screen and (max-width:768px){
     .journal-index{
@@ -49,7 +49,7 @@ main .wrap{
         gap: .5rem; 
     }
     .journal-index .month{
-        font-size: var(--h3-font-size);
+        font-size: var(--fs3-font-size);
     }
     .journal-index .category{
         display: none;
@@ -64,14 +64,14 @@ main .wrap{
     text-align: center;
 }
 .title h1{
-    font-size: var(--h1-font-size);
+    font-size: var(--fs1-font-size);
     font-weight: 600;
 }
 .title .sub-title{
-    font-size: var(--h3-font-size);
+    font-size: var(--fs3-font-size);
 }
 .journal-index span, .title span{
-    font-size: var(--p--font-size);
+    font-size: var(--fs4-font-size);
 }
 .font-btn{
     text-align: right;
@@ -80,8 +80,9 @@ main .wrap{
     letter-spacing: 0;
     padding: .5rem;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
-/* ===================================================== */
+/* article-pic-zoom */
 main article{
     padding-bottom: 2.5rem;
 }
@@ -102,7 +103,6 @@ article .item .pic-left img{
     width: 100%;
     height: 100%;
 }
-/* ============================================================ */
 article .item .pic-right{
     position: relative;
     width: 100%;
@@ -120,7 +120,7 @@ article .item .pic-right img{
     width: 100%;
     height: 100%;
 }
-/* ============================================================ */
+/* article-text */
 main .wrap article .container{
     display: flex;
     gap: 3rem;

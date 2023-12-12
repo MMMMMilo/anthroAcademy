@@ -10,7 +10,7 @@
     vertical-align: center;
 }
 .cover h1{
-    font-size: var(--h1-font-size);
+    font-size: var(--fs1-font-size);
     font-weight: 600;
     letter-spacing: 5px;
     line-height: 1.5;
@@ -55,7 +55,7 @@
         display: none;
     }
 }
-/* ==============================================teacher */
+/*teacher */
 .teacher{
     width: 100%;
 }
@@ -74,17 +74,17 @@
     gap: 1.5rem;
     justify-content: center;
 }
-/* ========================================共用 */
+/*共用 */
 .block-title{
-    font-size: var(--h2-font-size);
+    font-size: var(--fs2-font-size);
     font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 1.5rem;
     padding: 2rem 0;
 }
-/* ========================================共用 */
+/*共用 */
 .teacher .teacher-intro p{
-    font-size: var(--p--font-size);
+    font-size: var(--fs4-font-size);
     line-height: 1.5;
 }
 .teacher .teacher-card{
@@ -112,7 +112,7 @@
     vertical-align: middle;
 }
 .teacher .teacher-card .title{
-    font-size: var(--h3-font-size);
+    font-size: var(--fs3-font-size);
     letter-spacing: 5px;
     font-weight: 600;
     text-decoration: underline;
@@ -123,7 +123,7 @@
     line-height: 1.5;
     text-align: justify;
 }
-/* ============================================course */
+/* course */
 .course{
     text-align: center;
     padding-top: 2.5em;
@@ -147,6 +147,8 @@
     border:2px solid #02DEC5;
     border-radius: 1.875rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .course-card >*:not(:first-child){
     padding:5% 0;
@@ -157,7 +159,7 @@
     right: 1%;
 }
 .course .course-list .course-card .card-head span{
-    font-size: var(--p--font-size);
+    font-size: var(--fs4-font-size);
     color: #B2B2B2;
 }
 .course .course-list .course-card .card-head .poster{
@@ -171,13 +173,14 @@
     overflow: hidden;
 }
 .course .course-list .course-card .title{
-    font-size: var(--h3-font-size);
+    font-size: var(--fs3-font-size);
     line-height: 1.5;
     padding-bottom: 1rem;
     border-bottom: 1px solid #fff;
+    flex-grow: 1;
 }
 .course .course-list .course-card .card-foot{
-    font-size: var(--p--font-size);
+    font-size: var(--fs4-font-size);
     display: flex;
     justify-content: space-between;
 }
@@ -187,7 +190,7 @@
     }
 
 }
-/* ============================================news */
+/*news */
 .news{
     width: 100%;
     /* margin: auto; */
@@ -220,16 +223,16 @@
     }
 }
 .news .news-list .news-link .date{
-    font-size: var(--h3-font-size);
+    font-size: var(--fs3-font-size);
 }
 .news .news-list .news-link .title{
-    font-size: var(--h3-font-size);
+    font-size: var(--fs3-font-size);
     font-weight: 600;
 }
 .news .path-secondery{
     margin-bottom: 2rem;
 }
-/* ============================================feature */
+/*feature */
 .feature{
     width: 100%;
 }
@@ -282,7 +285,7 @@
     }
 }
 .feature .item h3{
-    font-size: var(--h3-font-size);
+    font-size: var(--fs3-font-size);
     line-height: 1.5;
     color: #fff;
 }

@@ -18,20 +18,20 @@
 }
 
 .banner .banner-text h1{
-    font-size: var(--h3-font-size);
+    font-size: var(--fs3-font-size);
 }
 .banner .banner-text h2{
-    font-size: var(--p--font-size);
+    font-size: var(--fs4-font-size);
 }
 
 @media screen and (min-width:768px){
     .banner .banner-text h1{
-        font-size: var(--h1-font-size);
+        font-size: var(--fs1-font-size);
         padding-bottom: 0.5rem;
         font-weight: 600;
     }
     .banner .banner-text h2{
-        font-size: var(--h2-font-size);
+        font-size: var(--fs2-font-size);
     }
 }
 
@@ -58,7 +58,7 @@ a{
     text-align: center;
 }
 .item .title h2{
-    font-size: var(--h2-font-size);
+    font-size: var(--fs2-font-size);
     font-weight: 600;
     line-height: 1.5;
 }
@@ -115,5 +115,5 @@ a{
 }
 
 span{
-    font-size: var(--p--font-size);
+    font-size: var(--fs4-font-size);
 }

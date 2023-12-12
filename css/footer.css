@@ -24,15 +24,15 @@ footer .footer-link button{
     border: none;
     background-color: transparent;
     color: #fff;
-    font-size: var(--p--font-size);
+    font-size: var(--fs4-font-size);
     cursor: pointer;
 }
 footer .copyright{
-    font-size: var(--p--font-size);
+    font-size: var(--fs4-font-size);
 }
 /* =============popup */
 #contact .title{
-    font-size: var(--h2-font-size);
+    font-size: var(--fs2-font-size);
     font-weight: 600;
     text-align: center;
 }
@@ -94,5 +94,5 @@ footer .copyright{
 }
 ::placeholder,.contact .inner .text{
     color: #fff;
-    font-size: var(--p--font-size);
+    font-size: var(--fs4-font-size);
 }

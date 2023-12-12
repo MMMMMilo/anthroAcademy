@@ -45,9 +45,7 @@
     width: 150px;
     height: 40px;
     margin: 1rem 0;
-    /* padding: 1rem 1.5rem; */
 }
-
 .right-col form{
     display: flex;
     flex-direction: column;
@@ -67,7 +65,6 @@
     color: #FFF;
     font-size: var(--p--font-size);
 }
-
 .right-col form select, option{
     appearance: none;
     color: #FFF;
