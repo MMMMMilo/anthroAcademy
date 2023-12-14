@@ -62,8 +62,13 @@ header .wrap .nav-bar a{
     }
     header nav .nav-bar{
         position: fixed;
-        z-index: 100;
-        inset: 0 0 0 40%;
+        z-index: 999;
+        /* inset: 0 0 0 40%; */
+        /* old version OS cannot support */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 40%;
         background-color: rgba(100, 100, 100, 0.1);
         backdrop-filter: blur(1.5rem);
         -webkit-backdrop-filter: blur(1.5rem);
@@ -79,7 +84,7 @@ header .wrap .nav-bar a{
         flex-direction: column;
         justify-content: center;
         position: absolute;
-        z-index: 999;
+        z-index: 1000;
         top: 20%;
         right: 10%;
     }
@@ -92,10 +97,39 @@ header .wrap .nav-bar a{
         animation: crossLine 1s linear;
     }
 }
+/* sign_popup */
+.sign{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(80, 80, 80, 0.5);
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    display: none;
+}
+.sign .container{
+    width: 50%;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+}
+@media screen and (max-width:768px){
+    .sign .container{
+        width: 70%;
+        margin: auto;
+    }
+}
+.sign .close-secondary{
+    position: absolute;
+    top: .5rem;
+    right: -2.2rem;
+}
 /* switch button-bg */
 .sign-switch{
-    width: 50%;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     position: relative;
 }
 .sign-switch input{
@@ -159,9 +193,15 @@ left,right:make sure the weight of button */
     background-color: #02DEC5;
     transition: right .4s , left .5s;
 }
-/* sign */
-.sign .sign-content{
-    width: 50%;
+/* sign-main-card */
+.sign-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style:preserve-3d;
+}
+/* in and up */
+.sign-card .sign-content{
     margin:auto;
     padding: 5% 5%;
     border-radius: 1rem;
@@ -170,12 +210,26 @@ left,right:make sure the weight of button */
     /* backdrop-filter: blur(0.5px);
     -webkit-backdrop-filter: blur(0.5px); */
     border: 1px solid rgba(255, 255, 255, 0.7);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
-@media screen and (max-width:768px){
-    .sign-content{
-        width: 70%;
-    }
+.sign-card .up{
+    position: absolute;
+    /* inset: 0 0 30vh 0; */
+    /* old version OS cannot support */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    background-color: transparent;
+    display: grid;
+    align-items: center;
 }
+.sign-card .in{
+    background-color: transparent;
+}
+/* sign-card-content */
 .sign-content h1{
     font-size: var(--fs1-font-size);
     font-weight: 600;
@@ -191,7 +245,7 @@ left,right:make sure the weight of button */
     font-size: clamp(0.5rem,1vw,0.8rem);
     color: #B2B2B2;
 }
-/* sign-input-validation */
+/* sign-card-input-validation */
 .sign-content form .form-grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -220,7 +274,7 @@ left,right:make sure the weight of button */
     font-size: var(--fs4-font-size);
     padding: .8rem;
 }
-/* sign-input-validation-show */
+/* sign-card-input-validation-show */
 .sign-content .form-grid input.success{
     border-color: var(--success-color);
 }
@@ -260,7 +314,7 @@ left,right:make sure the weight of button */
         margin-bottom: .5rem;
     }
 }
-/* change defult style of checkbox */
+/* change defult style of checkbox in card bottom*/
 .sign-content .check{
     font-size: clamp(0.5rem,1vw,0.8rem);
     display: block;
@@ -283,47 +337,25 @@ left,right:make sure the weight of button */
     background: url(../img/cb-on.svg) no-repeat;
     vertical-align: top;
 }
-
-/* flip-animation */
-.sign{}
-.sign .container{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    transform-style:preserve-3d;
-}
-/* in and up */
-.sign .container .sign-content{
-    backface-visibility: hidden;
-}
-.sign .container .up{
-    position: absolute;
-    inset: 0 0 30vh 0;
-    transform: rotateY(180deg);
-    background-color: transparent;
-}
-.sign .container .in{
-    background-color: transparent;
-}
-/* text click-flip effect */
-/* .sign .container:hover{
+/* test click-flip effect */
+/* .sign-card:hover{
     transform: rotateY(180deg);
     transition: transform 3s;
 }  */
 .is-flip{
-    animation: flip 1s linear both;
+    animation: flip .5s linear both;
 }
 .is-flipInverse{
-    animation: flip-inverse 1s linear both;
+    animation: flip-inverse .5s linear both;
 }
 
 @keyframes flip {
     0%{
         transform: rotateY(0);
     }
-    70%{
-        transform: rotateY(200deg);
-    }
+    /* 70%{
+        transform: rotateY(230deg);
+    } */
     100%{
         transform: rotateY(180deg);
     }
@@ -332,9 +364,9 @@ left,right:make sure the weight of button */
 	0%{
 		transform: rotateY(180deg);
 	}
-	70%{
-		transform: rotateY(-20deg);
-	}
+	/* 70%{
+		transform: rotateY(-50deg);
+	} */
 	100%{
 		transform: rotateY(0deg);
 	}

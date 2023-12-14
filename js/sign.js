@@ -1,17 +1,30 @@
+// sign-flip
 const switcher = document.querySelector("#switcher");
-const signContainer = document.querySelector('.sign .container')
+const signContainer = document.querySelector('.sign-card')
 
 switcher.addEventListener('click',()=>{
-    if(signContainer.classList.contains("is-flip") === false){
-        signContainer.classList.remove("is-flipInverse")
-        signContainer.classList.add("is-flip")
-    }else{
-        console.log("animation2")
+    if(signContainer.classList.contains("is-flip") === true){
         signContainer.classList.remove("is-flip")
         signContainer.classList.add("is-flipInverse")
+    }else{
+        console.log("animation2")
+        signContainer.classList.remove("is-flipInverse")
+        signContainer.classList.add("is-flip")
     }
 })
 
+//sign-popup
+const openSign = document.querySelector(".nav-bar :last-child>a");
+const closeSign = document.querySelector(".sign .close-secondary");
+const signForm = document.querySelector(".sign");
+
+openSign.addEventListener('click',()=>{
+    signForm.style.display="block";
+})
+closeSign.addEventListener('click',()=>{
+    signForm.style.display = "none";
+    signContainer.classList.remove("is-flipInverse" , "is-flip")
+})
 
 // function checkForm(){
 //     let form = document.getElementById('signForm');

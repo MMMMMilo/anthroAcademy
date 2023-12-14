@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnthroAcademy</title>
     <link rel="icon" href="img/ANTHRO ACADEMY.ico">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/header.css">
     <script src="https://kit.fontawesome.com/db0d0bbe07.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <input type="checkbox" id="nav-switch">
@@ -29,86 +29,87 @@
                     <li><a href="news.html">最新消息</a></li>
                     <li><a href="journalList.html">綠人月刊</a></li>
                     <li><a href="about.html">關於綠人</a></li>
-                    <li><a href="signin.html">登入/註冊</a></li>
+                    <li><a href="#">登入/註冊</a></li>
                 </ul>
             </nav>
         </div>
     </header>
  
-    <div class="sign-switch">
-        <input type="checkbox" id="switcher">
-        <label for="switcher" class="switcher"></label>
-    </div>
     <div class="sign">
-        <div class="container" >
-            <div class="sign-content up">
-                <h1>會員註冊</h1>
-                <div class="sign-other">
-                    <a href=""><span><i class="fa-brands fa-line" style="color: #B2B2B2;"></i></span>&nbsp使用LINE註冊</a>
-                    <a href=""><span><i class="fa-brands fa-google" style="color: #B2B2B2;"></i></span>&nbsp使用GOOGLE註冊</a>
-                </div>
-                <form id="signin" action="javascript:void(0);ss">
-                    <div class="form-grid">
-                        <div class="input-wrap">
-                            <input type="text" name="userId" placeholder="帳號">
-                            <span>帳號需8個字以上</span>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="password" name="password" placeholder="密碼" >
-                            <span>密碼需設定8至10碼</span>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="email" name="mail" placeholder="MAIL">
-                            <span>輸入有誤，請再檢查一次</span>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="tel" name="tel" placeholder="電話號碼">
-                            <span>輸入有誤，請再檢查一次</span>
-                        </div>
-                        <select name="gender">
-                            <option>性別(選填)</option>
-                            <option>男</option>
-                            <option>女</option>
-                            <option>多元性別</option>
-                        </select>
-                        <input placeholder="出生年月日" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="birthday" >
-                    </div>
-                    <label class="check" for="suscribe">
-                        <input type="checkbox" id="suscribe">
-                        <span></span>我同意使用綠人學院提供的服務並訂閱電子報
-                    </label>
-                    <label class="check" for="privacy">
-                        <input type="checkbox" id="privacy">
-                        <span></span>我已詳細閱讀服務條款與隱私權保護政策
-                    </label>
-                    <button class="submit-primary" type="submit">加入我們</button>
-                </form>    
+        <div class="container">
+            <button class="close-secondary">X</button>  
+            <div class="sign-switch">
+                <input type="checkbox" id="switcher">
+                <label for="switcher" class="switcher"></label>
             </div>
-            <div class="sign-content in">
-                <h1>會員登入</h1>
-                <div class="sign-other">
-                    <a href=""><span><i class="fa-brands fa-line" style="color: #B2B2B2;"></i></span>&nbsp使用LINE登入</a>
-                    <a href=""><span><i class="fa-brands fa-google" style="color: #B2B2B2;"></i></span>&nbsp使用GOOGLE登入</a>
-                </div>
-                <form id="signup" action="javascript:void(0);ss">
-                    <div class="form-grid">
-                        <div class="input-wrap">
-                            <input type="text" name="userId" placeholder="帳號">
-                            <span>帳號錯誤</span>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="password" name="password" placeholder="密碼">
-                            <span>密碼錯誤</span>
-                        </div>
+            <div class="sign-card" >
+                <div class="sign-content up">
+                    <h1>會員註冊</h1>
+                    <div class="sign-other">
+                        <a href=""><span><i class="fa-brands fa-line" style="color: #B2B2B2;"></i></span>&nbsp使用LINE註冊</a>
+                        <a href=""><span><i class="fa-brands fa-google" style="color: #B2B2B2;"></i></span>&nbsp使用GOOGLE註冊</a>
                     </div>
-                    <button class="submit-primary" type="submit">登入</button>
-                </form>    
+                    <form id="signin" action="javascript:void(0);ss">
+                        <div class="form-grid">
+                            <div class="input-wrap">
+                                <input type="text" name="userId" placeholder="帳號">
+                                <span>帳號需8個字以上</span>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="password" name="password" placeholder="密碼" >
+                                <span>密碼需設定8至10碼</span>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="email" name="mail" placeholder="MAIL">
+                                <span>輸入有誤，請再檢查一次</span>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="tel" name="tel" placeholder="電話號碼">
+                                <span>輸入有誤，請再檢查一次</span>
+                            </div>
+                            <select name="gender">
+                                <option>性別(選填)</option>
+                                <option>男</option>
+                                <option>女</option>
+                                <option>多元性別</option>
+                            </select>
+                            <input placeholder="出生年月日" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="birthday" >
+                        </div>
+                        <label class="check" for="suscribe">
+                            <input type="checkbox" id="suscribe">
+                            <span></span>我同意使用綠人學院提供的服務並訂閱電子報
+                        </label>
+                        <label class="check" for="privacy">
+                            <input type="checkbox" id="privacy">
+                            <span></span>我已詳細閱讀服務條款與隱私權保護政策
+                        </label>
+                        <button class="submit-primary" type="submit">加入我們</button>
+                    </form>
+                </div>
+                <div class="sign-content in">
+                    <h1>會員登入</h1>
+                    <div class="sign-other">
+                        <a href=""><span><i class="fa-brands fa-line" style="color: #B2B2B2;"></i></span>&nbsp使用LINE登入</a>
+                        <a href=""><span><i class="fa-brands fa-google" style="color: #B2B2B2;"></i></span>&nbsp使用GOOGLE登入</a>
+                    </div>
+                    <form id="signup" action="javascript:void(0);ss">
+                        <div class="form-grid">
+                            <div class="input-wrap">
+                                <input type="text" name="userId" placeholder="帳號">
+                                <span>帳號錯誤</span>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="password" name="password" placeholder="密碼">
+                                <span>密碼錯誤</span>
+                            </div>
+                        </div>
+                        <button class="submit-primary" type="submit">登入</button>
+                    </form>
+                </div>
             </div>
+
         </div>
     </div>
-
-    
     <script src="js/sign.js"></script>
-
 </body>
 </html>
