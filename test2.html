@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .text{
+        text-decoration: underline;
+        font-weight: 600;
+        color: #02DEC5;
+    }
+    body{
+        background-color: #212A2B;
+        color: #FFF;
+    }
+    .sign-switch{
+        width: 50%;
+        margin: 1.5rem auto;
+        position: relative;
+    }
+    .sign-switch input{
+        margin: 0 auto;
+        vertical-align: top;
+        appearance: none;
+        outline: none;
+        width: 100%;
+        padding: 1.5rem 0;
+        border: 1px solid #fff;
+        border-radius: 1rem;
+        position: relative;
+    }
+    /* switch button-font */
+    .sign-switch input:before,.sign-switch input::after{
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFF;
+        font-size: var(--fs3-font-size);
+        font-weight: 600;
+    }
+    .sign-switch input:before{
+        content: "登入";
+        left: 15%;
+    }
+    .sign-switch input::after{
+        content: "註冊";
+        right: 15%;
+    }
+    .sign-switch input:not(:checked)::before{
+        color: #212A2B;
+        transition: color .3s;
+    }
+    .sign-switch input:checked::after{
+        color: #212a2b;
+        transition: color .3s;
+    }
+    /* switch-button */
+    .sign-switch label{
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        bottom: 10%;
+        border-radius: 12px;
+    }
+    /* top,bottom: make sure the height of button
+    left,right:make sure the weight of button */
+    .sign-switch input:not(:checked)+label{
+        left: 5px;
+        right: 60%;
+        background-color: #02DEC5;
+        transition: left .4s , right .5s, background .2s;
+    }
+    .sign-switch input:checked+label{
+        left: 60%;
+        right: 5px;
+        background-color: #02DEC5;
+        transition: right .4s , left .5s;
+    }
+
+    .test{}
+    .test .change{
+        text-decoration: none;
+        font-size: 30px;
+        color: #fff;
+    }
+    .test .change:nth-child(1):hover{
+        color: red;
+    }
+    .test .change:not(:nth-child(1)):hover{
+        color: blue;
+    }
+
+    .test .aa{}
+    .test .bb{}
+    .test .cc{}
+    .test .dd{}
+
+    </style>
+</head>
+<body>
+
+    <div class="test">
+        <a href="#" class="change aa">aa</a>
+        <a href="#" class="change bb">bb</a>
+        <a href="#" class="change cc">cc</a>
+        <a href="#" class="change dd">dd</a>
+    </div>
+
+
+
+    <h3>測試測試</h3>
+    <div class="change" id="change">練習操作</div>
+    <div class="sign-switch" onclick="change();">
+        <input type="checkbox" id="switcher">
+        <label for="switcher"></label>
+    </div>
+
+
+    
+    <div>
+        <span onclick="changeTONorth();">北部地區</span>
+        <span onclick="changeTOCenter();">中部地區</span>
+    </div>    
+    <div class="north">台北、桃園、新竹</div>
+    <div class="center"style="display: none;">台中、苗栗</div>
+
+
+
+
+
+
+    <script>
+        function changeTONorth(){
+            let north = document.querySelector(".north");
+            let center = document.querySelector(".center");
+            north.style.display="block";
+            center.style.display="none";
+        }
+        function changeTOCenter(){
+            let north = document.querySelector(".north");
+            let center = document.querySelector(".center");
+            north.style.display="none";
+            center.style.display="block";
+        }
+
+    </script>
+
+
+
+    <script>
+        function change(){
+            //取得物件
+            let elem = document.querySelector("#change");
+            //操作物件
+            elem.innerHTML="好想睡覺";
+            elem.className="text";
+            elem.style.fontSize="30px"
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

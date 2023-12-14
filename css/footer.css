@@ -60,12 +60,14 @@ footer .copyright{
     margin:auto;
     padding: 5%;
     border-radius:1rem;
-    border:1px solid #fff;
-    background-color: rgba(256,256,256,.3) ;
+    border:1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(256,256,256,.1) ;
+    box-shadow: 0 4px 30px rgba(256 256, 256, 0.6);
     color: #fff; 
     display: flex;
     flex-direction: column;
     position: relative;
+    /* 距離top50%，再距離自己原本-50%再畫面至中 */
     top: 50%;
     transform: translateY(-50%);
 }
