@@ -67,7 +67,7 @@ footer .copyright{
     display: flex;
     flex-direction: column;
     position: relative;
-    /* 距離top50%，再距離自己原本-50%再畫面至中 */
+    /* Top 50% from parents，and than -50% from self to set the element on center of window.*/
     top: 50%;
     transform: translateY(-50%);
 }

@@ -69,18 +69,18 @@
 	position: relative;
 }
 .card.is-switched .card__wrapper {
-	-webkit-animation: rotate 0.5s linear both;
+	/* -webkit-animation: rotate 0.5s linear both; */
 			animation: rotate 0.5s linear both;
 }
 
 .card__wrapper {
 	transform-style: preserve-3d;
-	-webkit-animation: rotate-inverse 0.5s linear both;
+	/* -webkit-animation: rotate-inverse 0.5s linear both; */
 			animation: rotate-inverse 0.5s linear both;
 }
 
 .card__side {
-	-webkit-backface-visibility: hidden;
+	/* -webkit-backface-visibility: hidden; */
 			backface-visibility: hidden;
 	position: absolute;
 	top: 0;
@@ -190,6 +190,7 @@ function flipCard() {
 		switching = false;
 	}, cardTransitionTime / 2);
 }
+
 </script>
 </body>
 </html>

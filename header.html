@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/header.css">
     <script src="https://kit.fontawesome.com/db0d0bbe07.js" crossorigin="anonymous"></script>
-
+    
 </head>
 <body>
     <input type="checkbox" id="nav-switch">
@@ -49,22 +49,22 @@
                         <a href=""><span><i class="fa-brands fa-line" style="color: #B2B2B2;"></i></span>&nbsp使用LINE註冊</a>
                         <a href=""><span><i class="fa-brands fa-google" style="color: #B2B2B2;"></i></span>&nbsp使用GOOGLE註冊</a>
                     </div>
-                    <form id="signin" action="javascript:void(0);ss">
+                    <form id="signup">
                         <div class="form-grid">
                             <div class="input-wrap">
-                                <input type="text" name="userId" placeholder="帳號">
+                                <input type="text" class="signId" id="signId" placeholder="帳號">
                                 <span>帳號需8個字以上</span>
                             </div>
                             <div class="input-wrap">
-                                <input type="password" name="password" placeholder="密碼" >
-                                <span>密碼需設定8至10碼</span>
+                                <input type="password" class="signpassword" id="signpassword" placeholder="密碼" >
+                                <span>密碼需設定8至12碼</span>
                             </div>
                             <div class="input-wrap">
-                                <input type="email" name="mail" placeholder="MAIL">
+                                <input type="email" class="mail" id="mail" placeholder="MAIL">
                                 <span>輸入有誤，請再檢查一次</span>
                             </div>
                             <div class="input-wrap">
-                                <input type="tel" name="tel" placeholder="電話號碼">
+                                <input type="tel" class="tel" id="tel" placeholder="電話號碼">
                                 <span>輸入有誤，請再檢查一次</span>
                             </div>
                             <select name="gender">
@@ -73,8 +73,9 @@
                                 <option>女</option>
                                 <option>多元性別</option>
                             </select>
-                            <input placeholder="出生年月日" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="birthday" >
-                        </div>
+                            <input class="birthday-text" type="text" placeholder="出生年月日"> 
+                            <input class="birthday-date" type="date" style="display: none;">
+                            </div>
                         <label class="check" for="suscribe">
                             <input type="checkbox" id="suscribe">
                             <span></span>我同意使用綠人學院提供的服務並訂閱電子報
@@ -83,7 +84,7 @@
                             <input type="checkbox" id="privacy">
                             <span></span>我已詳細閱讀服務條款與隱私權保護政策
                         </label>
-                        <button class="submit-primary" type="submit">加入我們</button>
+                        <button class="submit-primary" type="submit" value="Send">加入我們</button>
                     </form>
                 </div>
                 <div class="sign-content in">
@@ -92,7 +93,7 @@
                         <a href=""><span><i class="fa-brands fa-line" style="color: #B2B2B2;"></i></span>&nbsp使用LINE登入</a>
                         <a href=""><span><i class="fa-brands fa-google" style="color: #B2B2B2;"></i></span>&nbsp使用GOOGLE登入</a>
                     </div>
-                    <form id="signup" action="javascript:void(0);ss">
+                    <form id="signin" action="javascript:void(0);ss">
                         <div class="form-grid">
                             <div class="input-wrap">
                                 <input type="text" name="userId" placeholder="帳號">
@@ -107,7 +108,6 @@
                     </form>
                 </div>
             </div>
-
         </div>
     </div>
     <script src="js/sign.js"></script>
