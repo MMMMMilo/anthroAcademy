@@ -59,9 +59,10 @@ function formValidation(e){
             }
         })
     })
-    form.addEventListener("submit",function(){
+    form.addEventListener("submit",function(e){
         if(!isValid){
             console.log('Form submission prevented. Validation failed.');
+            e.preventDefault
         }else{
             console.log('Form submitted successfully.');
             // form.style.display="none";

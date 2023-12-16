@@ -45,8 +45,12 @@
         //寫法一
         //window.onload = function(){$('#main-header').load('header.html')}
         //寫法二
-
-        window.addEventListener('load',function(){
+        // window.addEventListener('load',function(){
+        //     $('#main-header').load('header.html');
+        //     $('#main-footer').load('footer.html');
+        // });
+        //寫法三
+        document.addEventListener('DOMContentLoaded',function(){
             $('#main-header').load('header.html');
             $('#main-footer').load('footer.html');
         });
