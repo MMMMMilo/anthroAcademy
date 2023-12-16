@@ -32,7 +32,6 @@
     background-color:#212a2b;
     color: #fff;
 }
-
 /* ======================================== */
 .path-primary, .path-secondery{
     text-decoration: none;
@@ -43,6 +42,7 @@
     font-weight: 600;
     letter-spacing: 5px;
     display: inline-block;
+    cursor: pointer;
 }
 .path-primary{
     border: 1px solid #fff;
