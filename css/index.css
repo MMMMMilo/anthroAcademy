@@ -128,31 +128,31 @@
     text-align: center;
     padding-top: 2.5em;
     width: 100%;
-    position: relative;
 }
 .course .wrap{
     max-width:70%;
     margin:0 auto 3rem auto;
+    position: relative;
 }
 .carousel{
     width: 100%;
     overflow: auto;
     scroll-behavior: smooth;
     -webkit-scroll-snap-type: x mandatory;
-            scroll-snap-type: x mandatory;
+            scroll-snap-type: x mandatory;     
 }
 .carousel::-webkit-scrollbar{
     display: none;
 }
 .course .course-list{
-    padding: 2.5rem;
+    padding:2.5rem 0;
     display: flex;
     width: max-content;
     gap: 1.5rem;
     text-align: left;
 }
 .course .course-list .course-card{
-    width: 250px;
+    width: calc(65vw - 3rem);
     padding: 1em 2em;
     border:2px solid #02DEC5;
     border-radius: 1.875rem;
@@ -161,14 +161,14 @@
     flex-direction: column;
     scroll-snap-align: start;
 }
-@media screen and (max-width:1024px){
+@media screen and (min-width:768px){
     .course .course-list .course-card{
-        width: calc(31vw - 3rem);
+        width: calc(33.333vw - 4rem);
     }
 }
-@media screen and (max-width:768px){
+@media screen and (min-width:1024px){
     .course .course-list .course-card{
-        width: calc(65vw - 3rem);
+        width: calc(20vw - 3rem + 3px);
     }
 }
 .course-card >*:not(:first-child){
@@ -185,14 +185,13 @@
 }
 
 .course .course-list .course-card .card-head .poster{
-    border-radius: 0.625rem;
+    overflow: hidden;
+    margin: .5rem 0;
+    border-radius: 1rem;
 }
 .course .course-list .course-card .card-head .poster img{
     width: 100%;
     vertical-align: middle;
-    padding: .5rem 0;
-    border-radius: 15px;
-    overflow: hidden;
 }
 .course .course-list .course-card .title{
     font-size: var(--fs3-font-size);
@@ -206,18 +205,21 @@
     display: flex;
     justify-content: space-between;
 }
-.path-primary .prev, .path-primary.next{
+.path-primary.prev{
     position: absolute;
-    top: 0;
-    right: 0;
+    left:calc(var(--fs4-font-size)*-4);
+    top: 50%;
+    transform: translateY(-50%);
 }
-.path-primary .prev, .path-primary.prev{
+.path-primary.next{
     position: absolute;
-    top: 0;
-    left: 0;
+    right: 0;
+    right: calc(var(--fs4-font-size)*-4);
+    top: 50%;
+    transform: translateY(-50%);
 }
 @media screen and (min-width:1024px){
-    .path-primary, .path-secondery{
+    .path-primary.path, .path-secondery.path{
         margin-right: -80%;
     }
 
