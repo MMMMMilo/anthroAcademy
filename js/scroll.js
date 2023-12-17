@@ -1,14 +1,17 @@
 // 3D sphere
-const sphere = document.getElementById('sphere');
-const rows = []
+function sphere(){
+    const sphere = document.getElementById('sphere');
+    const rows = []
 
-for (let i = 0; i < 180; i += 9) {
-    rows.push(`<div class="line" style="transform:rotateY(${i}deg);"></div>`);
+    for (let i = 0; i < 180; i += 9) {
+        rows.push(`<div class="line" style="transform:rotateY(${i}deg);"></div>`);
+    }
+    for (let i = 0; i < 360; i += 18) {
+        rows.push(`<div class="line cross-line" style="transform:rotateX(${i}deg);"></div>`);
+    }
+    sphere.innerHTML = rows.join("");
 }
-for (let i = 0; i < 360; i += 18) {
-    rows.push(`<div class="line cross-line" style="transform:rotateX(${i}deg);"></div>`);
-}
-sphere.innerHTML = rows.join("");
+
 
 //IntersectionObserver(entires_callback,option)
 const blockTitles = document.querySelectorAll(".block-title")
@@ -55,4 +58,5 @@ function scrollRight(){
 window.addEventListener("load",function(){
     scrollDown();
     scrollRight();
+    sphere();
 });

@@ -91,7 +91,7 @@
     width: 100%;
 }
 .teacher .wrap{
-    max-width: 80%;
+    max-width: 85%;
     margin:5rem auto 5rem auto;
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
