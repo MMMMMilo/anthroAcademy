@@ -55,7 +55,7 @@ function scrollRight(){
     })
 }
 
-window.addEventListener("load",function(){
+window.addEventListener("DOMContentLoaded",function(){
     scrollDown();
     scrollRight();
     sphere();

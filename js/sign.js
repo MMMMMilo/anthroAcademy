@@ -69,7 +69,7 @@ function formValidation(e){
         }
     });
 }
-window.addEventListener("load",function(){
+window.addEventListener("DOMContentLoaded",function(){
     formValidation();
 });
 //change placeholder of birthday

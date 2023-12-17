@@ -95,7 +95,7 @@ function courseSelection(){
         resetColor(itemSouth);
     });
 }
-window.addEventListener("load",function(){
+window.addEventListener("DOMContentLoaded",function(){
     carousels();
     courseSelection();
 });
