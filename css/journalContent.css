@@ -15,7 +15,7 @@
     width: 100%;
     top: 0;
 }
-.bottom{
+.zigzag.bottom{
     transform: rotate(180deg);
 }
 /* main-position */
