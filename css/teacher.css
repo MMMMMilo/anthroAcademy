@@ -53,6 +53,14 @@ main .teacher-intro{
 main .teacher-intro .container{
     position: relative;
     margin: 2rem 0;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 1s;
+}
+.teacher-intro .container.show{
+    transform: translateX(0);
+    opacity: 1;
+    
 }
 main .teacher-intro .card{
     border: 1px solid #fff;

@@ -20,6 +20,8 @@ document.querySelector('.next').onclick = function () {
     });
     
 };
+
+
 //course selection
 const itemNorth = document.querySelector('.item.north')
 const itemCentral = document.querySelector('.item.central')
@@ -89,37 +91,3 @@ itemSouth.addEventListener('click',()=>{
 itemSouth.addEventListener('blur', () => {
     resetColor(itemSouth);
 });
-
-
-
-
-
-
-// function next(t) {
-//     document.querySelector('.next').onclick = t;
-//     let elm = t.parentElement.parentElement.querySelector('.course-list').children[0];
-//     let item = elm.getElementsByClassName("course-card");
-//     elm.append(item[0]);
-// }
-
-// function prev(t) {
-//     document.querySelector('.prev').onclick = t;
-//     let elm = t.parentElement.parentElement.querySelector('.course-list');
-//     let item = elm.getElementsByClassName("course-card");
-    
-//     if (item.length > 0) {
-//         let lastItem = item[item.length - 1];
-//         elm.removeChild(lastItem);
-//         elm.insertBefore(lastItem, elm.firstChild);
-//     }
-// }
-// document.querySelector('.prev').onclick = function () {
-//     prev(this);
-//     console.log("touch prev");
-// };
-
-// document.querySelector('.next').onclick = function () {
-//     next(this);
-//     console.log("touch next");
-// };
-

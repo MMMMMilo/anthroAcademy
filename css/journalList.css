@@ -56,6 +56,13 @@ a{
     gap: 1rem;
     padding: 2.5rem 0;
     text-align: center;
+    transition: all 1s;
+    transform: translateY(-80px);
+    opacity: 0;
+}
+.item.show{
+    transform: translateY(0);
+    opacity:1 ;
 }
 .item .title h2{
     font-size: var(--fs2-font-size);

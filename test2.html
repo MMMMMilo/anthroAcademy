@@ -92,15 +92,55 @@
         color: blue;
     }
 
-    .test .aa{}
-    .test .bb{}
-    .test .cc{}
-    .test .dd{}
-
+    .scene{
+        width: 600px;
+        height: 600px;
+        transform: rotatex(45deg) rotateY(45deg);
+        transform-style:preserve-3d ;
+    }
+    .scene .wrapper{
+        width: 100%;
+        height: 100%;
+    }
+    .scene .wrapper .sphere{
+        position: relative;
+        width: 70%;
+        height: 70%;
+        margin: 0 auto;
+        transform-style:preserve-3d ;
+        animation: rotate 100s infinite linear;
+    }
+    .line{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px dotted #02DEC5;
+        box-shadow:1px 0px 20px -2px rgba(0 0 0),1px 0px 50px -2px #02DEC5;
+    }
+    @keyframes rotate {
+        to {transform: rotateX(360deg) rotateY(360deg);}
+    }
     </style>
 </head>
 <body>
-
+    <div class="scene">
+        <div class="wrapper">
+            <div class="sphere" id="sphere"></div>
+        </div>
+    
+    </div>
+    <script>
+        const sphere = document.getElementById('sphere');
+        const rows = []
+        for(i=0;i<180;i+=9){
+            rows.push(`<div class="line" style="transform:rotateY(${i}deg)</div>"`);
+        }
+        sphere.innerHTML = rows.join("");
+    </script>
+<!-- 
     <div class="test">
         <a href="#" class="change aa">aa</a>
         <a href="#" class="change bb">bb</a>
@@ -124,7 +164,7 @@
         <span onclick="changeTOCenter();">中部地區</span>
     </div>    
     <div class="north">台北、桃園、新竹</div>
-    <div class="center"style="display: none;">台中、苗栗</div>
+    <div class="center"style="display: none;">台中、苗栗</div> -->
 
 
 
@@ -132,36 +172,67 @@
 
 
     <script>
-        function changeTONorth(){
-            let north = document.querySelector(".north");
-            let center = document.querySelector(".center");
-            north.style.display="block";
-            center.style.display="none";
-        }
-        function changeTOCenter(){
-            let north = document.querySelector(".north");
-            let center = document.querySelector(".center");
-            north.style.display="none";
-            center.style.display="block";
-        }
+    //     function changeTONorth(){
+    //         let north = document.querySelector(".north");
+    //         let center = document.querySelector(".center");
+    //         north.style.display="block";
+    //         center.style.display="none";
+    //     }
+    //     function changeTOCenter(){
+    //         let north = document.querySelector(".north");
+    //         let center = document.querySelector(".center");
+    //         north.style.display="none";
+    //         center.style.display="block";
+    //     }
 
-    </script>
-
-
-
-    <script>
-        function change(){
-            //取得物件
-            let elem = document.querySelector("#change");
-            //操作物件
-            elem.innerHTML="好想睡覺";
-            elem.className="text";
-            elem.style.fontSize="30px"
-        }
-    </script>
+    // </script>
 
 
 
+    // <script>
+    //     function change(){
+    //         //取得物件
+    //         let elem = document.querySelector("#change");
+    //         //操作物件
+    //         elem.innerHTML="好想睡覺";
+    //         elem.className="text";
+    //         elem.style.fontSize="30px"
+    //     }
+    // </script>
+
+    
+
+
+
+<script>
+// function next(t) {
+    //     document.querySelector('.next').onclick = t;
+    //     let elm = t.parentElement.parentElement.querySelector('.course-list').children[0];
+    //     let item = elm.getElementsByClassName("course-card");
+    //     elm.append(item[0]);
+    // }
+    
+    // function prev(t) {
+    //     document.querySelector('.prev').onclick = t;
+    //     let elm = t.parentElement.parentElement.querySelector('.course-list');
+    //     let item = elm.getElementsByClassName("course-card");
+        
+    //     if (item.length > 0) {
+    //         let lastItem = item[item.length - 1];
+    //         elm.removeChild(lastItem);
+    //         elm.insertBefore(lastItem, elm.firstChild);
+    //     }
+    // }
+    // document.querySelector('.prev').onclick = function () {
+    //     prev(this);
+    //     console.log("touch prev");
+    // };
+    
+    // document.querySelector('.next').onclick = function () {
+    //     next(this);
+    //     console.log("touch next");
+    // };
+</script>
 
 
 </body>

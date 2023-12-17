@@ -81,3 +81,33 @@ function formValidation(e) {
 window.addEventListener("load", function () {
     formValidation();
 });
+
+
+
+const carousels = document.querySelectorAll('.carousel');
+const widthItems = document.querySelectorAll('.course .carousel .course-list .course-card');
+
+document.querySelector('.prev').onclick = function () {
+    carousels.forEach((carousel) => {
+        const totalWidth = Array.from(carousel.children)
+        .reduce((acc, child) => acc + child.offsetWidth, 0);
+        carousel.scrollLeft += totalWidth;
+            console.log("touch prev");
+
+        // widthItems.forEach((widthItem) => {
+        //     carousel.scrollLeft -= widthItem.offsetWidth;
+        //     console.log("touch prev");
+        // });
+    });
+};
+document.querySelector('.next').onclick = function () {
+    carousels.forEach((carousel) => {
+    // Calculate the total width of the elements in the carousel
+        const totalWidth = Array.from(carousel.children)
+        .reduce((acc, child) => acc + child.offsetWidth, 0);
+
+        // Scroll the carousel to the right
+        carousel.scrollLeft += totalWidth;
+        console.log("touch next");
+    });
+};
