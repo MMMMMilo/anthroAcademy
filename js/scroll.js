@@ -23,7 +23,6 @@ function scrollDown(){
         entires.forEach(entry =>{
             entry.target.classList.toggle("show",entry.isIntersecting)
         })
-        console.log(entires);
     },{
         threshold:.3,
     }

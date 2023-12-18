@@ -85,3 +85,7 @@ birthdayDate.addEventListener('blur', function() {
     birthdayText.style.display = 'block';
     birthdayDate.style.display = 'none';
 });
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+    console.log("DOM fully loaded and parsed"); 
+});

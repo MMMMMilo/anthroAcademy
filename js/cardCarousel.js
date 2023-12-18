@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded",function(){
+    carousels();
+    courseSelection();
+});
 //carousels
 function carousels(){
     const carousels = document.querySelectorAll('.carousel');
@@ -24,7 +28,7 @@ function carousels(){
 }
 
 
-    //course selection
+//course selection
 function courseSelection(){
     const itemNorth = document.querySelector('.item.north')
     const itemCentral = document.querySelector('.item.central')
@@ -95,7 +99,6 @@ function courseSelection(){
         resetColor(itemSouth);
     });
 }
-window.addEventListener("DOMContentLoaded",function(){
-    carousels();
-    courseSelection();
+document.addEventListener("DOMContentLoaded", function(event) { 
+    console.log("DOM fully loaded and parsed"); 
 });
