@@ -1,3 +1,4 @@
+//changeFontSize
 $(function(){
     // let currentSize = parseInt($('.container').css('font-size'));
     //偵測目前font-size
@@ -21,4 +22,3 @@ $(function(){
         $('.container').css('font-size',newSize)
     }
 });
-

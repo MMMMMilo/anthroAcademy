@@ -176,7 +176,7 @@
     overflow: auto;
     scroll-behavior: smooth;
     -webkit-scroll-snap-type: x mandatory;
-            scroll-snap-type: x mandatory;     
+            scroll-snap-type: x mandatory;       
 }
 .carousel::-webkit-scrollbar{
     display: none;
@@ -259,7 +259,6 @@
     .path-primary.path, .path-secondery.path{
         margin-right: -80%;
     }
-
 }
 /*news */
 .news{

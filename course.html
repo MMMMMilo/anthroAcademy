@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/db0d0bbe07.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.7.1.js"></script>
 </head>
@@ -17,9 +19,9 @@
         <div class="wrap">
             <div class="location">
                 <h1>課程報名</h1>
-                <span class="item north" tabindex="0">◎ 北部地區</span>
-                <span class="item central" tabindex="0">◎ 中部地區</span>
-                <span class="item south" tabindex="0">◎ 南部地區</span>
+                <span class="item north" id="itemNorth" tabindex="0">◎ 北部地區</span>
+                <span class="item central" id="itemCentral" tabindex="0">◎ 中部地區</span>
+                <span class="item south" id="itemSouth" tabindex="0">◎ 南部地區</span>
                 <span tabindex="0">◎ 東部地區</span>
                 <span tabindex="0">◎ 外島</span>
             </div>
@@ -47,7 +49,7 @@
     </div>
     <div class="course">
         <div class="wrap">
-            <div class="carousel nor">
+            <div class="course-list-wrap nor">
                 <div class="course-list">
                     <div class="course-card 1">
                         <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
@@ -161,23 +163,9 @@
                             <i class="fa-solid fa-location-dot" style="color: #ffffff;">新竹市</i>
                         </div>
                     </div>
-                    <div class="course-card 3">
-                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="card-head">
-                            <span class="course-class">#講座</span>
-                            <div class="poster"><img src="img/frontpage-course-card-photo3.png" alt="course3">
-                            </div>
-                            <span class="date">2023.11.11</span>
-                        </div>
-                        <h3 class="title">CBAM碳權交易論壇<br></h3>
-                        <div class="card-foot">
-                            <span>環境保護聯會</span>
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;">新竹市</i>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="carousel cen">
+            <div class="course-list-wrap cen">
                 <div class="course-list">
                     <div class="course-card 4">
                         <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
@@ -291,23 +279,9 @@
                             <i class="fa-solid fa-location-dot" style="color: #ffffff;">彰化市</i>
                         </div>
                     </div>
-                    <div class="course-card 6">
-                        <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="card-head">
-                            <span class="course-class">#講座</span>
-                            <div class="poster"><img src="img/course-card-photo6.png" alt="course6">
-                            </div>
-                            <span class="date">2023.11.11</span>
-                        </div>
-                        <h3 class="title">循環經濟研討會</h3>
-                        <div class="card-foot">
-                            <span>環境保護聯合會</span>
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;">彰化市</i>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="carousel sou">
+            <div class="course-list-wrap sou">
                 <div class="course-list">
                     <div class="course-card 7">
                         <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
@@ -421,27 +395,10 @@
                             <i class="fa-solid fa-location-dot" style="color: #ffffff;">屏東市</i>
                         </div>
                     </div>
-                    <div class="course-card 9">
-                        <div class="card-head">
-                            <a href="#" class="more-detail-traingle"><i class="fa-solid fa-arrow-right"></i></a>
-                            <span class="course-class">#講座</span>
-                            <div class="poster"><img src="img/course-card-photo9.png" alt="course9">
-                            </div>
-                            <span class="date">2023.11.11</span>
-                        </div>
-                        <h3 class="title">SBTi<br>科學基礎減量目標講座</h3>
-                        <div class="card-foot">
-                            <span>環境保護聯合會</span>
-                            <i class="fa-solid fa-location-dot" style="color: #ffffff;">屏東市</i>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <button class="path-primary prev" ><i class="fa-solid fa-angle-left" style="color: #ffffff;"></i></button>
-            <button class="path-primary next"><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i></button>
         </div>
     </div>
-
     <div class="pages-primary">
         <button><i class="fa-solid fa-caret-left" style="color: #ffffff;"></i></button>
         <button>1</button>
@@ -452,13 +409,7 @@
         <button><i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></button>
     </div>
     <footer id="main-footer"></footer>
-    <script>
-        document.addEventListener('DOMContentLoaded',function(){
-            $('#main-header').load('header.html');
-            $('#main-footer').load('footer.html');
-        });
-    </script>
-    <script src="js/cardCarousel.js" defer></script>
-
+    <script defer src="js/loading.js"></script>
+    <script defer src="js/courseSelection.js"></script>
 </body>
 </html>
