@@ -14,6 +14,9 @@ body{
     letter-spacing: 1px;
 }
 /* main-nav */
+.main-header{
+    position: sticky;
+}
 .main-nav{
     width: 100%;
     position: sticky;
@@ -163,7 +166,7 @@ body{
 /* switch button-font */
 .sign-switch input::before,.sign-switch input::after{
     position: absolute;
-    z-index: 2;
+    z-index: 10000;
     top: 50%;
     transform: translateY(-50%);
     color: #FFF;
@@ -191,7 +194,7 @@ body{
 /* switch-button */
 .sign-switch .switcher{
     position: absolute;
-    z-index: 1;
+    z-index: 10001;
     top: 10%;
     bottom: 10%;
     border-radius: 12px;
