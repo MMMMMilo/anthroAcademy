@@ -45,7 +45,7 @@ function signFlip() {
     let signCard = document.querySelector('.sign .container .sign-card');
     let switcher = document.querySelector("#switcher");
 
-    switcher.addEventListener('change', function () {
+    switcher.addEventListener('click', function () {
         if (signCard.classList.contains("is-flip")) {
             signCard.classList.remove("is-flip");
             signCard.classList.add("is-flipInverse");

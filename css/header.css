@@ -14,16 +14,20 @@ body{
     letter-spacing: 1px;
 }
 /* main-nav */
-.main-header{
-    position: sticky;
-}
-.main-nav{
+#main-header{
     width: 100%;
     position: sticky;
     top: 0;
     background-color: #212A2B;
-    z-index: 99;
+    z-index: 999;
 }
+/* .main-nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #212A2B;
+    z-index: 999;
+} */
 .main-nav .wrap{
     width: 100%;
     margin: auto;
@@ -166,7 +170,7 @@ body{
 /* switch button-font */
 .sign-switch input::before,.sign-switch input::after{
     position: absolute;
-    z-index: 10000;
+    z-index: 10001;
     top: 50%;
     transform: translateY(-50%);
     color: #FFF;
@@ -194,7 +198,7 @@ body{
 /* switch-button */
 .sign-switch .switcher{
     position: absolute;
-    z-index: 10001;
+    z-index: 10000;
     top: 10%;
     bottom: 10%;
     border-radius: 12px;
