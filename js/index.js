@@ -9,6 +9,7 @@ function sphere(){
     for (let i = 0; i < 360; i += 18) {
         rows.push(`<div class="line cross-line" style="transform:rotateX(${i}deg);"></div>`);
     }
+    //Concatenate all the HTML string elements stored in the rows array into a single string.
     sphere.innerHTML = rows.join("");
 }
 //IntersectionObserver(entires_callback,option)
