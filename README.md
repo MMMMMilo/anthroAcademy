@@ -4,12 +4,13 @@
 
 ## 網站架構  
 
-![網站架構](https://github.com/MMMMMilo/AnthroAcademy/assets/152141976/1da3c2ad-eacb-415c-bc8f-4a7ae32c4405)  
+![Letter - 1](https://github.com/MMMMMilo/AnthroAcademy/assets/152141976/4b946b93-38e4-451b-8bd1-6410faf1dbde)
+
 
 ## 使用技術  
 
 HTML CSS JavaScript JQuery  
 
-## 網站聯結  
+## 網站連結  
 
 <https://mmmmmilo.github.io/AnthroAcademy/>
