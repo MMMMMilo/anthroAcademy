@@ -1,4 +1,6 @@
-# Anthro Academy 綠人學院 
+## Anthro Academy 綠人學院 
+
+以單字Anthropocene為出發，網站內容呈現氣候邊遷及環境影響衍生相關教學、活動資訊。
 
 ## 網站架構  
 
