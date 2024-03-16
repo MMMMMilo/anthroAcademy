@@ -4,7 +4,7 @@
 
 ## 網站架構  
 
-![Slide 16_9 - 1](https://github.com/MMMMMilo/AnthroAcademy/assets/152141976/d1344b71-328a-42b0-b0b8-225635a34a5a)
+![Slide 16_9 - 1](https://github.com/MMMMMilo/AnthroAcademy/assets/152141976/91105b71-229b-476a-b0d8-d50ebbd8895f)
 
 ## 使用技術  
 
